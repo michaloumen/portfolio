@@ -7,8 +7,6 @@ p {
   margin: 0;
 }
 
-/* colormind.io */
-
 *,
 *::after,
 *::before {
@@ -16,10 +14,6 @@ p {
   box-sizing: border-box;
 }
 
-:root {
-  --midnight-blue: #133D51
-  --sage-green: #678A7D
-  --golden-yellow: #F3C781
-  --tangerine-orange: #EA980E
-  --rust-red: #A6321A
+body {
+  padding: 1.2rem 10rem;
 }
