@@ -13,7 +13,3 @@ p {
   /* this makes the box not include extra size when adding "padding" */
   box-sizing: border-box;
 }
-
-body {
-  padding: 1.2rem 10rem;
-}
