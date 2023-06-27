@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { color, font, space } from '../../styles';
+import { color, font, size } from '../../styles';
 
 export const NavbarContainer = styled.div`
   display: flex;
@@ -7,15 +7,20 @@ export const NavbarContainer = styled.div`
   align-items: center;
   letter-spacing: 1px;
   background-color: ${color.midnightBlue};
-  padding: ${space.pagePadding};
+  padding: ${size.pagePadding};
   color: ${color.tangerineOrange};
   font-size: ${font.fontSize};
   font-weight: ${font.fontWeight};
+  img {
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+  }
 `;
 
 export const NavbarLinksContainer = styled.div`
   display: flex;
-  gap: ${space.gap};
+  gap: ${size.gap};
 
   a {
     text-decoration: none;
@@ -32,3 +37,4 @@ export const NavbarLinksContainer = styled.div`
 export const NavbarName = styled.div`
 
 `;
+

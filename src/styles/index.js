@@ -1,6 +1,6 @@
 import color from './color';
 import font from './font';
-import space from './space';
+import size from './size';
 
-export { color, font, space };
+export { color, font, size };
 
