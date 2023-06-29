@@ -6,7 +6,7 @@ export const NavbarContainer = styled.div`
   justify-content: space-between;
   letter-spacing: 1px;
   gap: ${space.gap};
-  background-color: ${color.midnightBlue};
+  background-color: ${color.sageGreen};
   padding: ${space.pagePadding};
   color: ${color.tangerineOrange};
   font-size: ${font.fontSize};

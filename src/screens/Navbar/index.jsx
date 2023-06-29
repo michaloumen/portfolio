@@ -27,4 +27,8 @@ const Navbar = () => {
   );
 };
 
+// tem um bug no menu-icon
+// quando fecho ele e expando a tela, ele continua aparecendo
+// quero diminuir a tela e não aparecer ainda a lista
+
 export default Navbar;
