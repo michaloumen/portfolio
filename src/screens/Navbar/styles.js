@@ -1,28 +1,13 @@
-import styled, { keyframes } from 'styled-components';
-import { color, font, size } from '../../styles';
-
-const rotateMenu = keyframes`
-  0% {
-    opacity: 0;
-    transform: rotateX(-90deg) translateY(-20px);
-  }
-  50% {
-    opacity: 0.5;
-    transform: rotateX(0deg) translateY(10px);
-  }
-  100% {
-    opacity: 1;
-    transform: rotateX(0deg) translateY(0);
-  }
-`;
+import styled from 'styled-components';
+import { color, font, rotateMenu, space } from '../../styles';
 
 export const NavbarContainer = styled.div`
   display: flex;
   justify-content: space-between;
   letter-spacing: 1px;
-  gap: 1rem;
+  gap: ${space.gap};
   background-color: ${color.midnightBlue};
-  padding: ${size.pagePadding};
+  padding: ${space.pagePadding};
   color: ${color.tangerineOrange};
   font-size: ${font.fontSize};
   font-weight: ${font.fontWeight};
@@ -40,7 +25,7 @@ export const NavbarContainer = styled.div`
 
   @media (max-width: 768px) {
     flex-direction: column;
-    padding-left: 1rem;
+    padding-left: ${space.gap};
   }
 `;
 
@@ -48,7 +33,7 @@ export const NavbarLinksContainer = styled.div`
   display: flex;
   white-space: nowrap;
   animation: ${rotateMenu} 0.6s;
-  gap: ${size.gap};
+  gap: ${space.gap};
 
   a {
     text-decoration: none;
@@ -69,4 +54,5 @@ export const NavbarLinksContainer = styled.div`
 export const NavbarName = styled.div`
   display: flex;
   justify-content: space-between;
+  white-space: nowrap;
 `;
