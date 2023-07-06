@@ -15,4 +15,46 @@ const rotateMenu = keyframes`
   }
 `;
 
-export default rotateMenu;
+const backgroundIcons1 = keyframes`
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+`;
+
+const backgroundIcons2 = keyframes`
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+`;
+
+const backgroundIcons3 = keyframes`
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+`;
+
+const backgroundIcons4 = keyframes`
+  0% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+`;
+
+export { 
+  rotateMenu,
+  backgroundIcons1,
+  backgroundIcons2,
+  backgroundIcons3,
+  backgroundIcons4
+};

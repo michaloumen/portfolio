@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import * as S from './styles';
 
 const Navbar = () => {
@@ -7,6 +7,14 @@ const Navbar = () => {
   const handleClick = () => {
     setShowLinks(!showLinks);
   };
+
+  useEffect(() => {
+    const handleResize = () => {
+      setShowLinks(window.innerWidth > 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+  }, []);
 
   return (
     <S.NavbarContainer showLinks={showLinks}>
@@ -27,8 +35,6 @@ const Navbar = () => {
   );
 };
 
-// tem um bug no menu-icon
-// quando fecho ele e expando a tela, ele continua aparecendo
-// quero diminuir a tela e não aparecer ainda a lista
+// adicionar transição na abertura e fechamento do navbar
 
 export default Navbar;

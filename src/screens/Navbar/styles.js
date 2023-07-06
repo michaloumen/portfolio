@@ -23,9 +23,19 @@ export const NavbarContainer = styled.div`
     }
   }
 
+  @media (min-width: 769px) {
+    img {
+      display: none;
+    }
+  }
+
   @media (max-width: 768px) {
     flex-direction: column;
     padding-left: ${space.gap};
+  }
+
+  @media (min-width: 769px) {
+    flex-direction: row;
   }
 `;
 
@@ -48,6 +58,11 @@ export const NavbarLinksContainer = styled.div`
 
   @media (max-width: 768px) {
     flex-direction: column;
+  }
+
+  @media (min-width: 769px) {
+    flex-direction: row;
+    display: flex;
   }
 `;
 

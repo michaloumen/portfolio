@@ -21,8 +21,54 @@ import { ReactComponent as Cloud } from "./svg/cloud.svg";
 import { ReactComponent as Mic } from "./svg/mic.svg";
 
 const AnimatedBackground = ({ children }) => {
+  let arr = [];
+  let rowsQty = 15;
+
+  for (let i = 0; i < rowsQty; i++) {
+    arr.push(i);
+  };
+
+  const showIcons = () => {
+    return (
+      <div>
+        <Code />
+        <JS />
+        <ReactSVG />
+        <Keyboard />
+        <Git />
+        <Sql />
+        <Coffee />
+        <Html />
+        <Battery />
+        <Time />
+        <Paper />
+        <Home />
+        <Bike />
+        <Weight />
+        <Heart />
+        <Flask />
+        <Web />
+        <Game />
+        <Cloud />
+        <Mic />
+      </div>
+    );
+  }
+
+  const layers = arr.map(i => {
+    return (
+      <S.AnimatedRow key={i}>
+        {showIcons()}
+        {showIcons()}
+      </S.AnimatedRow>
+    );
+  });
+
   return (
-    <S.AnimatedContainer>{children}</S.AnimatedContainer>
+    <S.AnimatedSection>
+      {layers}
+      {children}
+    </S.AnimatedSection>
   );
 };
 
