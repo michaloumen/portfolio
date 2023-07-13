@@ -1,5 +1,4 @@
 import color from './color';
-import font from './font';
 import {
   rotateMenu,
   backgroundIcons1,
@@ -11,7 +10,6 @@ import space from './space';
 
 export {
   color,
-  font,
   rotateMenu,
   backgroundIcons1,
   backgroundIcons2,
