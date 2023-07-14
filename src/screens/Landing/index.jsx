@@ -1,4 +1,4 @@
-import AnimatedBackground from '../components/AnimatedBackground';
+import AnimatedBackground from '../components/organisms/AnimatedBackground';
 // import * as S from './styles';
 
 const Landing = () => {
