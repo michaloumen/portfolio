@@ -6,8 +6,8 @@ export const NavbarContainer = styled.div`
   padding: 1.2rem 10vh;
   font-size: 1.2rem;
   font-weight: 600;
-  background-color: ${color.sageGreen};
-  color: ${color.tangerineOrange};
+  background-color: ${color.meadowGreen};
+  color: ${color.citrusBurst};
 `;
 
 export const MenuDesktop = styled.div`
@@ -20,8 +20,6 @@ export const MenuDesktop = styled.div`
 `;
 
 export const MenuMobile = styled.div`
-  flex-direction: column;
-  padding-left: ${space.gap};
   img {
     width: 1.5rem;
     height: 1.5rem;
