@@ -1,5 +1,6 @@
 import './App.css';
-import { Navbar, Landing } from './screens';
+import { Landing } from './screens';
+import Navbar from './screens/components/molecules/Navbar';
 
 function App() {
   return (

@@ -1,18 +1,9 @@
 import { useState } from 'react';
+import NavbarLinks from '../../atoms/NavbarLinks';
 import * as S from './styles';
 
 const Navbar = () => {
   const [showLinks, setShowLinks] = useState(false);
-
-  const renderNavBarLinks = (
-    <S.NavbarLinksContainer>
-    <a href='#home'>Home</a>
-    <a href='#aboutme'>About Me</a>
-    <a href='#technolegies'>Technologies</a>
-    <a href='#portfolio'>Portfolio</a>
-    <a href='#contact'>Contact</a>
-  </S.NavbarLinksContainer>
-  );
 
   return (
     <S.NavbarContainer>
@@ -20,14 +11,14 @@ const Navbar = () => {
         <S.NavbarName>
           Michelle Mendonça
         </S.NavbarName>
-        {renderNavBarLinks}
+        <NavbarLinks />
       </S.MenuDesktop>
       <S.MenuMobile>
         <S.NavbarName>
           Michelle Mendonça
           <img src='./menu-icon.svg' alt='Menu Icon' onClick={() => setShowLinks(!showLinks)} />
         </S.NavbarName>
-        {showLinks && renderNavBarLinks}
+        {showLinks && <NavbarLinks />}
       </S.MenuMobile>
     </S.NavbarContainer>
   )

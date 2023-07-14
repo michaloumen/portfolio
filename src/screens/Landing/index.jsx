@@ -1,4 +1,4 @@
-import { AnimatedBackground } from '../components';
+import AnimatedBackground from '../components/AnimatedBackground';
 // import * as S from './styles';
 
 const Landing = () => {
