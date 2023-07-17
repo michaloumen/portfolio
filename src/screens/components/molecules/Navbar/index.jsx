@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import NavbarLinks from '../../atoms/NavbarLinks';
+import NavbarLinks from '../../molecules/NavbarLinks';
 import * as S from './styles';
 
 const Navbar = () => {

@@ -1,5 +1,5 @@
 import { useHistory } from 'react-router-dom';
-import navItems from '../NavItems';
+import navItems from '../../atoms/NavItems';
 import * as S from './styles';
 
 const NavbarLinks = () => {

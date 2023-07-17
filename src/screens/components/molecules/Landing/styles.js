@@ -3,7 +3,6 @@ import color from '../../../../styles/color';
 
 export const LandingType = styled.div`
   position: absolute;
-  z-index: 1;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);

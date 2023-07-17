@@ -1,5 +1,4 @@
-import AnimatedBackground from '../../organisms/AnimatedBackground';
-import { Typewritter } from '../../..';
+import Typewritter from '../../organisms/Typewritter';
 import * as S from './styles';
 
 const msgArray = [
@@ -15,12 +14,10 @@ const msgArray = [
 
 const Landing = () => {
   return (
-    <AnimatedBackground>
-      <S.LandingType>
+    <S.LandingType>
       <div>What am I?</div>
       <Typewritter data={msgArray} typeSpeed={100} msgDelay={2000} />
-      </S.LandingType>
-    </AnimatedBackground>
+    </S.LandingType>
   );
 };
 

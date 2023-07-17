@@ -1,5 +1,5 @@
-const PageAboutMe = () => {
-  return <p>aboutme</p>;
-}
+import AboutMe from '../screens/components/atoms/AboutMe';
+
+const PageAboutMe = () => (<AboutMe />);
 
 export default PageAboutMe;
