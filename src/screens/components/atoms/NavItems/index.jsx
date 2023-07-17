@@ -1,22 +1,9 @@
-import * as S from './styles';
-import { useHistory } from 'react-router-dom';
+const navItems = [
+  { itemName: 'Home', itemPath: '/' },
+  { itemName: 'About Me', itemPath: '/aboutme' },
+  { itemName: 'Technologies', itemPath: '/technologies' },
+  { itemName: 'Portfolio', itemPath: '/portfolio' },
+  { itemName: 'Contact', itemPath: '/contact' },
+];
 
-const NavItems = ({ items }) => {
-  const history = useHistory();
-
-  const handleLinkClick = (path) => {
-    history.push(path);
-  };
-
-  return (
-    <S.NavbarLinksContainer>
-      {items.map(({ itemName, itemPath }) => (
-        <S.Item key={itemPath} onClick={() => handleLinkClick(itemPath)}>
-          {itemName}
-        </S.Item>
-      ))}
-    </S.NavbarLinksContainer>
-  );
-};
-
-export default NavItems;
+export default navItems;
