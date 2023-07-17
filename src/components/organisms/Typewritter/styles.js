@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import color from '../../../../styles/color';
+import color from '../../../styles/color';
 
 export const TextArea = styled.div`
   textarea {

@@ -5,7 +5,7 @@ import {
   backgroundIcons2,
   backgroundIcons3,
   backgroundIcons4
-} from '../../../../styles';
+} from '../../../styles';
 
 export const AnimatedSection = styled.div`
   position: relative;

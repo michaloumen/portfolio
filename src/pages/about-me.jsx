@@ -1,4 +1,4 @@
-import AboutMe from '../screens/components/atoms/AboutMe';
+import AboutMe from '../components/atoms/AboutMe';
 
 const PageAboutMe = () => (<AboutMe />);
 

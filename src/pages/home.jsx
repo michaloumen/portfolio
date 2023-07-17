@@ -1,4 +1,4 @@
-import Landing from "../screens/components/molecules/Landing";
+import Landing from "../components/molecules/Landing";
 
 const PageHome = () => (<Landing />);
 

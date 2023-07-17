@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { color } from '../../../../styles';
+import { color } from '../../../styles';
 
 export const NavbarContainer = styled.div`
   letter-spacing: 1px;

@@ -1,7 +1,7 @@
 import './App.css';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import Navbar from './screens/components/molecules/Navbar';
-import AnimatedBackground from './screens/components/organisms/AnimatedBackground';
+import Navbar from './components/molecules/Navbar';
+import AnimatedBackground from './components/organisms/AnimatedBackground';
 import PageAboutMe from './pages/about-me';
 import PageHome from './pages/home';
 import PageTechnologies from './pages/technologies';

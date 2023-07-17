@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { color, rotateMenu, space } from '../../../../styles';
+import { color, rotateMenu, space } from '../../../styles';
 
 export const NavbarLinksContainer = styled.div`
   display: flex;
