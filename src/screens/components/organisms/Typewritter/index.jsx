@@ -1,29 +1,7 @@
 import { useEffect } from 'react';
 import * as S from './styles';
 
-/**
- * 
- * @param {Array} data - Array[]: Array of strings to be typed
- * @param {Number} TypedSpeed -  Number: speed of typing in milliseconds
- * * @param {Numbers} MsgDelay - Number: delay between each message in milliseconds 
- * ------------------------------------------------------------------
- * 
- * usage:
- * 
- * `<Typewritter
- * 
- * &nbsp;&nbsp;&nbsp;data={msgArray} 
- * 
- * &nbsp;&nbsp;&nbsp;TypeSpeed={100}
- * 
- * &nbsp;&nbsp;&nbsp;MsgDelay={2000}
- * 
- * />`
- */
-
-// https://jsdoc.app/tags-params.html
-
-const Typewritter = ({ data = [], TypeSpeed = 100, MsgDelay = 2000 }) => {
+const Typewritter = ({ data, typeSpeed, msgDelay }) => {
   useEffect(() => {
     let characterPos = 0;
     let msgBuffer = '';
@@ -35,9 +13,9 @@ const Typewritter = ({ data = [], TypeSpeed = 100, MsgDelay = 2000 }) => {
       if(characterPos !== data[msgIndex].length) {
         msgBuffer = msgBuffer + data[msgIndex].charAt(characterPos);
         id.value = msgBuffer + '_';
-        delay = TypeSpeed;
+        delay = typeSpeed;
       } else {
-        delay = MsgDelay;
+        delay = msgDelay;
         msgBuffer = '';
         characterPos = -1;
         msgIndex = msgIndex !== data.length - 1 ? msgIndex + 1 : 0;
@@ -46,7 +24,7 @@ const Typewritter = ({ data = [], TypeSpeed = 100, MsgDelay = 2000 }) => {
       setTimeout(startTyping, delay);
     };
     startTyping();
-  }, []);
+  }, [data, typeSpeed, msgDelay]);
 
   return (
     <S.TextArea>

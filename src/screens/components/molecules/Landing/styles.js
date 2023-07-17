@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import color from '../../../../styles/color';
 
 export const LandingType = styled.div`
   position: absolute;
@@ -11,7 +12,7 @@ export const LandingType = styled.div`
   align-items: center;
   justify-content: center;
   font-size: 3rem;
-  color: #FFB830;
+  color: ${color.burntSienna};
   background-color: rgba(0, 0, 0, 0.2);
   padding: 1.2rem;
   border-radius: 5px;

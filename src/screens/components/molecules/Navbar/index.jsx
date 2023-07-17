@@ -24,6 +24,4 @@ const Navbar = () => {
   )
 };
 
-// adicionar transição na abertura e fechamento do navbar
-
 export default Navbar;

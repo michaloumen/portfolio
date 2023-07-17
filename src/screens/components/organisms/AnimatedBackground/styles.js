@@ -14,7 +14,7 @@ export const AnimatedSection = styled.div`
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  // padding: 2rem;
+  padding: 2rem;
   background-color: ${color.twilightPurple};
 
   svg {
