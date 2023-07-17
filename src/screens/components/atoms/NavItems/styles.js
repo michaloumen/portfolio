@@ -17,10 +17,10 @@ export const Item = styled.div`
   text-decoration: none;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
-  color: ${color.citrusBurst};
+  color: ${color.darkPurple};
 
   &:hover {
     transform: translateY(-5px);
-    color: ${color.glimmeringGold};
+    color: ${color.transparentPurple};
   }
 `;

@@ -7,7 +7,7 @@ export const NavbarContainer = styled.div`
   font-size: 1.2rem;
   font-weight: 600;
   background-color: ${color.meadowGreen};
-  color: ${color.citrusBurst};
+  color: ${color.darkPurple};
 `;
 
 export const MenuDesktop = styled.div`

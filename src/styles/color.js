@@ -1,7 +1,7 @@
 const colors = {
   burntSienna: '#FFB830',
-  citrusBurst: '#56556E',
-  glimmeringGold: '#56556Ecc',
+  darkPurple: '#56556E',
+  transparentPurple: '#56556Ecc',
   meadowGreen: '#BFB051',
   twilightPurple: '#635377'
 };

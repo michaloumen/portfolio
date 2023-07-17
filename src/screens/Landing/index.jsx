@@ -1,15 +1,25 @@
 import AnimatedBackground from '../components/organisms/AnimatedBackground';
-// import * as S from './styles';
+import { Typewritter } from '..';
+import * as S from './styles';
+
+let msgArray = [
+  ' ',
+  'A Software Developer',
+  'Also know as an',
+  'Frontend Developer',
+  'Backend Developer',
+  'Or',
+  'A Coder',
+  ' '
+];
 
 const Landing = () => {
   return (
     <AnimatedBackground>
-      <div>Mimimimimimimimimi</div>
-      <div>Mimimimimimimimimi</div>
-      <div>Mimimimimimimimimi</div>
-      <div>Mimimimimimimimimi</div>
-      <div>Mimimimimimimimimi</div>
-      <div>Mimimimimimimimimi</div>
+      <S.LandingType>
+      <div>What am I?</div>
+      <Typewritter data={msgArray} />
+      </S.LandingType>
     </AnimatedBackground>
   );
 };
