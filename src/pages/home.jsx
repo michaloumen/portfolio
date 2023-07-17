@@ -1,5 +1,5 @@
-import Landing from "../components/molecules/Landing";
+import Home from '../components/atoms/Home';
 
-const PageHome = () => (<Landing />);
+const PageHome = () => (<Home />);
 
 export default PageHome;

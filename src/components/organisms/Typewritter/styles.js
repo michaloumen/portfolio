@@ -5,8 +5,7 @@ export const TextArea = styled.div`
   textarea {
     border: none;
     font-weight: bold;
-    color: ${color.burntSienna};
-    text-align: center;
+    color: ${color.yellow};
     overflow: auto;
     outline: none;
     resize: none;

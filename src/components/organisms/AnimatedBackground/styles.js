@@ -15,7 +15,7 @@ export const AnimatedSection = styled.div`
   flex-direction: column;
   overflow: hidden;
   // padding: 2rem;
-  background-color: ${color.twilightPurple};
+  background-color: ${color.purple};
 
   svg {
     width: 150px;
@@ -26,8 +26,8 @@ export const AnimatedSection = styled.div`
   }
 
   svg:hover {
-    filter: drop-shadow(0 0 15px ${color.burntSienna});
-    fill: ${color.burntSienna};
+    filter: drop-shadow(0 0 15px ${color.yellow});
+    fill: ${color.yellow};
   }
 `;
 
