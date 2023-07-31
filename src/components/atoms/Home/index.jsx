@@ -1,18 +1,22 @@
 import Landing from '../../molecules/Landing';
+import PropTypes from 'prop-types';
 import * as S from './styles';
 
-const Home = () => {
+const Home = ({ image, text }) => {
   return (
     <S.HomeContainer>
-      <img src='square-me.png' alt='myself' />
+      <img src={image} alt='myself' />
       <div>
         <Landing />
-        <p>
-          Eu sou uma minina bem bunita pra dedéu. Se você não gostou então olha só o meu olho
-        </p>
+        {text}
       </div>
     </S.HomeContainer>
   );
+};
+
+Home.propTypes = {
+  image: PropTypes.node.isRequired,
+  text: PropTypes.string
 };
 
 export default Home;

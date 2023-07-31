@@ -4,11 +4,11 @@ import * as S from './styles';
 const msgArray = [
   ' ',
   'A Software Developer',
-  'Also know as an',
+  'Also known as',
   'Frontend Developer',
   'Backend Developer',
   'Or',
-  'A Coder',
+  'Just Micha xD',
   ' '
 ];
 

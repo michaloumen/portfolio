@@ -1,4 +1,5 @@
 import Icons from './svg';
+import PropTypes from 'prop-types';
 import * as S from './styles';
 
 const AnimatedBackground = ({ children }) => {
@@ -28,6 +29,10 @@ const AnimatedBackground = ({ children }) => {
       {children}
     </S.AnimatedSection>
   );
+};
+
+AnimatedBackground.propTypes = {
+  children: PropTypes.node
 };
 
 export default AnimatedBackground;

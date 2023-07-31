@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import PropTypes from 'prop-types';
 import * as S from './styles';
 
 const Typewritter = ({ data, typeSpeed, msgDelay }) => {
@@ -32,6 +33,12 @@ const Typewritter = ({ data, typeSpeed, msgDelay }) => {
       </textarea>
     </S.TextArea>
   )
+};
+
+Typewritter.propTypes = {
+  data: PropTypes.array,
+  typeSpeed: PropTypes.number,
+  msgDelay: PropTypes.number
 };
 
 export default Typewritter;
