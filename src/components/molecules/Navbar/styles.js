@@ -3,7 +3,7 @@ import { color } from '../../../styles';
 
 export const NavbarContainer = styled.div`
   letter-spacing: 1px;
-  padding: 1.2rem 10vh;
+  padding: 1.2rem 50px;
   font-size: 1.2rem;
   font-weight: 600;
   background-color: ${color.blue};

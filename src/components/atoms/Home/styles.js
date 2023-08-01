@@ -12,7 +12,7 @@ export const Container = styled.div`
   align-items: center;
   background-color: rgba(0, 0, 0, 0.2);
   padding: 1.2rem;
-  border-radius: 5px;
+  border-radius: 6px;
   backdrop-filter: blur(10px);
   color: ${color.gray};
   img {

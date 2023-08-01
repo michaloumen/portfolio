@@ -1,13 +1,14 @@
 import TechnologiesIcons from '../../atoms/TecnologiesIcons';
+import * as S from './styles';
 
 const TechnologiesList = () => {
   return (
     <>
       {TechnologiesIcons.map((technology, index) => (
-        <div key={index}>
+        <S.Container key={index}>
           {technology.image}
-          <h2>{technology.name}</h2>
-        </div>
+          <S.Text>{technology.name}</S.Text>
+        </S.Container>
       ))}
     </>
   );

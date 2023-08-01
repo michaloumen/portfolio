@@ -1,16 +1,27 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   background-color: #635377;
   gap: 20px;
+  padding: 100px;
 `;
 
 export const ListContainer = styled.div`
-  svg {
-    width: 200px;
-    height: 200px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+  justify-content: center;
+  padding: 100px;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+
+  @media (max-width: 530px) {
+    grid-template-columns: 1fr;
   }
 `;

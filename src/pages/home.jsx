@@ -3,7 +3,7 @@ import Home from '../components/atoms/Home';
 const PageHome = () => (
   <Home
     image='/square-me.png'
-    text='Eu sou uma minina bem bunita pra dedéu. Se você não gostou então olha só o meu olho'
+    text='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
   />
 );
 
