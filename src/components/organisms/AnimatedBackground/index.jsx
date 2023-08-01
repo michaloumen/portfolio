@@ -1,5 +1,5 @@
-import Icons from './svg';
 import PropTypes from 'prop-types';
+import AnimatedBackgroundIcons from '../../atoms/AnimatedBackgroundIcons';
 import * as S from './styles';
 
 const AnimatedBackground = ({ children }) => {
@@ -11,7 +11,7 @@ const AnimatedBackground = ({ children }) => {
   };
 
   const showIcons = () => {
-    return <Icons />;
+    return <AnimatedBackgroundIcons />;
   };
 
   const layers = arr.map(i => {

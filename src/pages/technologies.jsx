@@ -1,5 +1,7 @@
-const PageTechnologies = () => {
-  return <p>technologies</p>;
-}
+import Technologies from "../components/molecules/Tecnologies";
+
+const PageTechnologies = () => (
+  <Technologies />
+);
 
 export default PageTechnologies;

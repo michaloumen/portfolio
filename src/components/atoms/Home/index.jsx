@@ -1,16 +1,19 @@
-import Landing from '../../molecules/Landing';
 import PropTypes from 'prop-types';
+import Landing from '../../molecules/Landing';
+import AnimatedBackground from '../../organisms/AnimatedBackground';
 import * as S from './styles';
 
 const Home = ({ image, text }) => {
   return (
-    <S.HomeContainer>
-      <img src={image} alt='myself' />
-      <div>
-        <Landing />
-        {text}
-      </div>
-    </S.HomeContainer>
+    <AnimatedBackground>
+      <S.Container>
+        <img src={image} alt='myself' />
+        <div>
+          <Landing />
+          {text}
+        </div>
+      </S.Container>
+    </AnimatedBackground>
   );
 };
 
