@@ -11,18 +11,20 @@ const Typewritter = ({ data, typeSpeed, msgDelay }) => {
 
     const startTyping = () => {
       const id = document.getElementById('typing-text');
-      if(characterPos !== data[msgIndex].length) {
-        msgBuffer = msgBuffer + data[msgIndex].charAt(characterPos);
-        id.value = msgBuffer + '_';
-        delay = typeSpeed;
-      } else {
-        delay = msgDelay;
-        msgBuffer = '';
-        characterPos = -1;
-        msgIndex = msgIndex !== data.length - 1 ? msgIndex + 1 : 0;
-      };
-      characterPos++;
-      setTimeout(startTyping, delay);
+      if (id) {
+        if (characterPos !== data[msgIndex].length) {
+          msgBuffer = msgBuffer + data[msgIndex].charAt(characterPos);
+          id.value = msgBuffer + '_';
+          delay = typeSpeed;
+        } else {
+          delay = msgDelay;
+          msgBuffer = '';
+          characterPos = -1;
+          msgIndex = msgIndex !== data.length - 1 ? msgIndex + 1 : 0;
+        }
+        characterPos++;
+        setTimeout(startTyping, delay);
+      }
     };
     startTyping();
   }, [data, typeSpeed, msgDelay]);
@@ -32,7 +34,7 @@ const Typewritter = ({ data, typeSpeed, msgDelay }) => {
       <textarea id='typing-text' readOnly>
       </textarea>
     </S.TextArea>
-  )
+  );
 };
 
 Typewritter.propTypes = {

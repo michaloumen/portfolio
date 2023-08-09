@@ -1,19 +1,20 @@
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import navItems from '../../atoms/NavItems';
 import * as S from './styles';
 
 const NavbarLinks = () => {
-  const history = useHistory();
+  const navigate = useNavigate();
+  // useNavigate evita rerenderização
 
   const handleLinkClick = (path) => {
-    history.push(path);
+    navigate(path);
   };
 
   return (
     <S.NavbarLinksContainer>
       {navItems.map(({ itemName, itemPath }) => (
         <div key={itemPath} onClick={() => handleLinkClick(itemPath)}>
-          <a href={itemPath}>{itemName}</a>
+          {itemName}
         </div>
       ))}
     </S.NavbarLinksContainer>

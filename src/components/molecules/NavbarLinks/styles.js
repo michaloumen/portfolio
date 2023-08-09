@@ -4,6 +4,7 @@ import { color, rotateMenu, space } from '../../../styles';
 export const NavbarLinksContainer = styled.div`
   display: flex;
   white-space: nowrap;
+  cursor: pointer;
   animation: ${rotateMenu} 0.6s;
   gap: ${space.gap};
 
@@ -15,7 +16,6 @@ export const NavbarLinksContainer = styled.div`
   a {
     text-decoration: none;
     transition: all 0.3s ease-in-out;
-    cursor: pointer;
     color: ${color.gray};
 
     &:hover {

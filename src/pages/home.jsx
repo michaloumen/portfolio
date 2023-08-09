@@ -1,4 +1,4 @@
-import Home from '../components/atoms/Home';
+import Home from '../components/templates/Home';
 
 const PageHome = () => (
   <Home
