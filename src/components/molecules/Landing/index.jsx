@@ -15,7 +15,7 @@ const msgArray = [
 const Landing = () => {
   return (
     <S.LandingType>
-      <div>What am I?</div>
+      <div>Who am I?</div>
       <Typewritter data={msgArray} typeSpeed={100} msgDelay={2000} />
     </S.LandingType>
   );

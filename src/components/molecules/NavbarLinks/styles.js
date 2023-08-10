@@ -13,14 +13,13 @@ export const NavbarLinksContainer = styled.div`
     padding-top: 10px;
   }
 
-  a {
+  div {
     text-decoration: none;
     transition: all 0.3s ease-in-out;
-    color: ${color.gray};
 
     &:hover {
-      // transform: translateY(-5px);
-      color: ${color.transparentGray};
+      transform: translateY(-5px);
+      color: ${color.yellow};
     }
   }
 `;

@@ -4,7 +4,7 @@ import * as S from './styles';
 
 const AnimatedBackground = ({ children }) => {
   let arr = [];
-  let rowsQty = 15;
+  let rowsQty = 20;
 
   for (let i = 0; i < rowsQty; i++) {
     arr.push(i);

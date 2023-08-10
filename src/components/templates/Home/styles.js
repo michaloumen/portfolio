@@ -1,9 +1,14 @@
 import styled from 'styled-components';
 import { color } from '../../../styles';
 
+export const StyledAnimatedBackground = styled.div`
+  overflow: hidden;
+  max-height: 100vh;
+`;
+
 export const Container = styled.div`
   position: absolute;
-  top: 50%;
+  top: 54%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
@@ -15,6 +20,7 @@ export const Container = styled.div`
   border-radius: 6px;
   backdrop-filter: blur(10px);
   color: ${color.gray};
+  font-size: 18px;
   img {
     max-width: 50%;
     max-height: 300px;

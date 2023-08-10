@@ -1,9 +1,9 @@
 const colors = {
   yellow: '#FFB830',
-  gray: '#D3D3D3',
-  transparentGray: '#D3D3D3cc',
+  gray: '#F0F0F0',
+  transparentGray: '#F0F0F0CC',
   blue: '#233E8B',
-  purple: '#635377'
+  purple: '#8A60A6'
 };
 
 export default colors;

@@ -1,14 +1,19 @@
 import * as S from './styles';
+import AnimatedBackground from '../../organisms/AnimatedBackground';
 import TechnologiesList from '../TecnologiesList';
 
 const Technologies = () => {
   return (
-    <S.Container>
-      <h1>Some of the technologies I use</h1>
-      <S.ListContainer>
-        <TechnologiesList />
-      </S.ListContainer>
-    </S.Container>
+    <S.StyledAnimatedBackground>
+      <AnimatedBackground>
+        <S.Container>
+          <span>Some of the technologies I use</span>
+          <S.ListContainer>
+            <TechnologiesList />
+          </S.ListContainer>
+        </S.Container>
+      </AnimatedBackground>
+    </S.StyledAnimatedBackground>
   )
 };
 

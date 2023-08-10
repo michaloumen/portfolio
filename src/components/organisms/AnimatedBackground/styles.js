@@ -8,14 +8,11 @@ import {
 } from '../../../styles';
 
 export const AnimatedSection = styled.div`
-  position: relative;
   width: 100%;
-  height: 100vh;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
-  // padding: 2rem;
   background-color: ${color.purple};
+  overflow: hidden;
 
   svg {
     width: 150px;
@@ -34,7 +31,7 @@ export const AnimatedSection = styled.div`
 export const AnimatedRow = styled.div`
   position: relative;
   top: -60%;
-  left: -5%;
+  left: -50%;
   width: 100%;
   display: flex;
   padding: 10px 0;
