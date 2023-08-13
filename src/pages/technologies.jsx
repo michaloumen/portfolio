@@ -1,4 +1,4 @@
-import Technologies from "../components/molecules/Tecnologies";
+import Technologies from "../components/templates/Technologies";
 
 const PageTechnologies = () => (
   <Technologies />
