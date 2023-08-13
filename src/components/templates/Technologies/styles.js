@@ -3,21 +3,22 @@ import { color } from '../../../styles';
 
 export const StyledAnimatedBackground = styled.div`
   overflow: hidden;
-  max-height: 104vh;
+  max-height: 1020px;
 
-  @media (max-width: 1600px) { max-height: 150vh; }
-  @media (max-width: 1200px) { max-height: 180vh; }
-  @media (max-width: 900px) { max-height: 250vh; }
-  @media (max-width: 700px) { max-height: 435vh; }
+  ${(props) => props.tecnologiesList && `
+    @media (max-width: 1200px) { max-height: 1250px; }
+    @media (max-width: 900px) { max-height: 1730px }
+    @media (max-width: 700px) { max-height: 3000px; }
+  `}
 `;
 
 export const Container = styled.div`
   position: absolute;
   max-width: 74rem;
   width: 100%;
+  top: 100px; 
   left: 50%;
   transform: translateX(-50%);
-  top: 100px; 
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 6px;
   padding: 50px;
@@ -35,7 +36,7 @@ export const Container = styled.div`
   }
 `;
 
-export const CarouselMode = styled.div`
+export const Text = styled.div`
   margin: 12px;
   span {
     color: white;
