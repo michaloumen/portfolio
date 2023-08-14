@@ -3,11 +3,12 @@ import { color } from '../../../styles';
 
 export const StyledAnimatedBackground = styled.div`
   overflow: hidden;
-  max-height: 1020px;
-
-  ${(props) => props.tecnologiesList && `
-    @media (max-width: 1200px) { max-height: 1250px; }
-    @media (max-width: 900px) { max-height: 1730px }
+  max-height: 104vh;
+  
+  ${(props) => props.listContainer && `
+    @media (max-width: 1600px) { max-height: 1000px }
+    @media (max-width: 1200px) { max-height: 1400px; }
+    @media (max-width: 900px) { max-height: 1740px; }
     @media (max-width: 700px) { max-height: 3000px; }
   `}
 `;

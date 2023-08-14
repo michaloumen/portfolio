@@ -26,7 +26,7 @@ const Technologies = () => {
 
   const renderTechnologies = () => (
     showList ? (
-      <S.ListContainer tecnologiesList><TechnologiesList /></S.ListContainer>
+      <S.ListContainer listContainer><TechnologiesList /></S.ListContainer>
     ) : (
       <Carousel>{TechnologiesList()}</Carousel>
     )
