@@ -3,24 +3,15 @@ import { color } from '../../../styles';
 
 export const StyledAnimatedBackground = styled.div`
   overflow: hidden;
-  max-height: 100vh;
+  max-height: 200vh;
 `;
 
-export const Container = styled.div`
-  position: absolute;
-  top: 54%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+export const Text = styled.div`
   display: flex;
   gap: 20px;
-  justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.2);
-  padding: 1.2rem;
-  border-radius: 6px;
-  backdrop-filter: blur(10px);
-  color: ${color.gray};
   font-size: 18px;
+  color: ${color.gray};
   img {
     max-width: 50%;
     max-height: 300px;
