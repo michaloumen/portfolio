@@ -11,7 +11,6 @@ const Home = () => {
   return (
     <S.StyledAnimatedBackground>
       <AnimatedBackground>
-        {/* <S.Container> */}
         <Container>
           <S.Text>
             <img src='/square-me.png' alt='myself' />
@@ -21,7 +20,6 @@ const Home = () => {
             </div>
           </S.Text>
         </Container>
-        {/* </S.Container> */}
       </AnimatedBackground>
     </S.StyledAnimatedBackground>
   );

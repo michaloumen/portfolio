@@ -1,4 +1,4 @@
-import TechnologiesIcons from '../../atoms/TecnologiesIcons';
+import TechnologiesIcons from '../../icons/TecnologiesIcons';
 import * as S from './styles';
 
 const TechnologiesList = () =>

@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import AnimatedBackgroundIcons from '../../atoms/AnimatedBackgroundIcons';
+import AnimatedBackgroundIcons from '../../icons/AnimatedBackgroundIcons';
 import * as S from './styles';
 
 const AnimatedBackground = ({ children }) => {
