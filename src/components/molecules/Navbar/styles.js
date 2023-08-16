@@ -17,17 +17,27 @@ export const MenuDesktop = styled.div`
   @media (max-width: 769px) {
     display: none;
   }
+
+  div {
+    display: flex;
+  }
 `;
 
 export const MenuMobile = styled.div`
-  img {
-    width: 1.5rem;
-    height: 1.5rem;
-    cursor: pointer;
+  div {
+    display: flex;
   }
 
   @media (min-width: 769px) {
     display: none;
+  }
+`;
+
+export const StyledMenuIcon = styled.div`
+  svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
   }
 `;
 

@@ -1,10 +1,12 @@
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useLanguageContext } from '../../../hooks/languageProvider';
 import navItems from '../../atoms/NavItems';
 import * as S from './styles';
 
 const NavbarLinks = () => {
   const navigate = useNavigate();
-  // useNavigate evita rerenderização
+  const { isEnglishLanguage } = useLanguageContext();
 
   const handleLinkClick = (path) => {
     navigate(path);
@@ -14,7 +16,7 @@ const NavbarLinks = () => {
     <S.NavbarLinksContainer>
       {navItems.map(({ itemName, itemPath }) => (
         <div key={itemPath} onClick={() => handleLinkClick(itemPath)}>
-          {itemName}
+          {isEnglishLanguage ? itemName.en : itemName.pt}
         </div>
       ))}
     </S.NavbarLinksContainer>

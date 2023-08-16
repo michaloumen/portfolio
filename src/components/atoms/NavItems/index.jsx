@@ -1,8 +1,20 @@
 const navItems = [
-  { itemName: 'Home', itemPath: '/' },
-  { itemName: 'Technologies', itemPath: '/technologies' },
-  { itemName: 'Portfolio', itemPath: '/portfolio' },
-  { itemName: 'Contact', itemPath: '/contact' },
+  {
+    itemName: { en: 'Home', pt: 'Início' },
+    itemPath: '/'
+  },
+  {
+    itemName: { en: 'Technologies', pt: 'Tecnologias' },
+    itemPath: '/technologies'
+  },
+  {
+    itemName: { en: 'Portfolio', pt: 'Portfolio' },
+    itemPath: '/portfolio'
+  },
+  {
+    itemName: { en: 'Contact', pt: 'Contato' },
+    itemPath: '/contact'
+  }
 ];
 
 export default navItems;
