@@ -6,6 +6,7 @@ import PageHome from './pages/home';
 import PageTechnologies from './pages/technologies';
 import PagePortfolio from './pages/portfolio';
 import PageContact from './pages/contact';
+import LanguageProvider from './hooks/languageProvider';
 
 const PageTitleUpdater = () => {
   const location = useLocation();
@@ -29,16 +30,18 @@ const PageTitleUpdater = () => {
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <Navbar />
-      <PageTitleUpdater />
-      <Routes>
-        <Route path="/" element={<PageHome />} />
-        <Route path="/technologies" element={<PageTechnologies />} />
-        <Route path="/portfolio" element={<PagePortfolio />} />
-        <Route path="/contact" element={<PageContact />} />
-      </Routes>
-    </BrowserRouter>
+    <LanguageProvider>
+      <BrowserRouter>
+        <Navbar />
+        <PageTitleUpdater />
+        <Routes>
+          <Route path="/" element={<PageHome />} />
+          <Route path="/technologies" element={<PageTechnologies />} />
+          <Route path="/portfolio" element={<PagePortfolio />} />
+          <Route path="/contact" element={<PageContact />} />
+        </Routes>
+      </BrowserRouter>
+    </LanguageProvider>
   );
 };
 

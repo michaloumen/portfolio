@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLanguageContext } from '../../../hooks/languageProvider';
-import * as S from './styles'; 
+import * as S from './styles';
 
 const Tradutor = () => {
   const { isEnglishLanguage, toggleLanguage } = useLanguageContext();
