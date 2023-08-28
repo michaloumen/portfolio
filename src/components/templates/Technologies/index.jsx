@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
+import { useLanguageContext } from '../../../hooks/languageProvider';
+import messages from '../../../utils/messages';
 import AnimatedBackground from '../../organisms/AnimatedBackground';
 import TechnologiesList from '../../molecules/TechnologiesList';
 import Carousel from '../../molecules/Carousel';
@@ -6,6 +8,8 @@ import Container from '../../atoms/Container';
 import * as S from './styles';
 
 const Technologies = () => {
+  const { isEnglishLanguage } = useLanguageContext();
+  const technologiesTextMessages = messages[isEnglishLanguage ? 'en' : 'ptbr'].technologies;
   const [showList, setShowList] = useState(true);
 
   const toggleListContainer = () => {
@@ -15,12 +19,12 @@ const Technologies = () => {
   const renderText = () => (
     showList ? (
       <S.BodyText>
-        Não existe nenhum motivo para colocar essa mesma lista em um Carrossel. Mas eu quis fazer mesmo assim!
-        <span onClick={() => toggleListContainer()}> Clique aqui e veja o modo 🎠 Carrossel 🎠</span>
+        {technologiesTextMessages.changeView}
+        <span onClick={() => toggleListContainer()}> {technologiesTextMessages.clickHere}</span>
       </S.BodyText>
     ) : (
       <S.BodyText>
-        <span onClick={() => toggleListContainer()}>Volte para a visualização anterior</span>
+        <span onClick={() => toggleListContainer()}>{technologiesTextMessages.back}</span>
       </S.BodyText>
     )
   );
@@ -38,7 +42,7 @@ const Technologies = () => {
       <AnimatedBackground>
         <Container>
           <S.HeaderText>
-            <span>Some of the technologies I use</span>
+            <span>{technologiesTextMessages.header}</span>
             {renderText()}
             {renderTechnologies()}
           </S.HeaderText>

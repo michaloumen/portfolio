@@ -1,20 +1,26 @@
-const navItems = [
-  {
-    itemName: { en: 'Home', pt: 'Início' },
-    itemPath: '/'
-  },
-  {
-    itemName: { en: 'Technologies', pt: 'Tecnologias' },
-    itemPath: '/technologies'
-  },
-  {
-    itemName: { en: 'Portfolio', pt: 'Portfolio' },
-    itemPath: '/portfolio'
-  },
-  {
-    itemName: { en: 'Contact', pt: 'Contato' },
-    itemPath: '/contact'
-  }
-];
+import messages from "../../../utils/messages";
 
-export default navItems;
+const NavItems = (isEnglishLanguage) => {
+  const navigationMessages = messages[isEnglishLanguage ? 'en' : 'ptbr'].navigation;
+
+  return [
+    {
+      itemName: navigationMessages.home,
+      itemPath: '/'
+    },
+    {
+      itemName: navigationMessages.technologies,
+      itemPath: '/technologies'
+    },
+    {
+      itemName: navigationMessages.portfolio,
+      itemPath: '/portfolio'
+    },
+    {
+      itemName: navigationMessages.contact,
+      itemPath: '/contact'
+    }
+  ];
+};
+
+export default NavItems;

@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import { useRef, memo } from 'react';
 import PropTypes from 'prop-types';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
@@ -26,4 +26,4 @@ Carousel.propTypes = {
   children: PropTypes.node
 };
 
-export default React.memo(Carousel);
+export default memo(Carousel);

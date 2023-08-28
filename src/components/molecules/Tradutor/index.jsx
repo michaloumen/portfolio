@@ -1,4 +1,3 @@
-import React from 'react';
 import { useLanguageContext } from '../../../hooks/languageProvider';
 import * as S from './styles';
 

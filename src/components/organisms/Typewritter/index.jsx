@@ -8,6 +8,7 @@ const Typewritter = ({ data, typeSpeed, msgDelay }) => {
     let msgBuffer = '';
     let msgIndex = 0;
     let delay;
+    let timer;
 
     const startTyping = () => {
       const id = document.getElementById('typing-text');
@@ -23,16 +24,20 @@ const Typewritter = ({ data, typeSpeed, msgDelay }) => {
           msgIndex = msgIndex !== data.length - 1 ? msgIndex + 1 : 0;
         }
         characterPos++;
-        setTimeout(startTyping, delay);
+        timer = setTimeout(startTyping, delay);
       }
     };
+
     startTyping();
+
+    return () => {
+      clearTimeout(timer);
+    };
   }, [data, typeSpeed, msgDelay]);
 
   return (
     <S.TextArea>
-      <textarea id='typing-text' readOnly>
-      </textarea>
+      <textarea id='typing-text' readOnly></textarea>
     </S.TextArea>
   );
 };

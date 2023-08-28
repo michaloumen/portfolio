@@ -1,12 +1,16 @@
-import Landing from '../../molecules/Landing';
+import AboutMe from '../../molecules/AboutMe';
 import AnimatedBackground from '../../organisms/AnimatedBackground';
 import Container from '../../atoms/Container';
+import { useLanguageContext } from '../../../hooks/languageProvider';
+import messages from '../../../utils/messages';
 import * as S from './styles';
 
 const Home = () => {
+  const { isEnglishLanguage } = useLanguageContext();
   const currentDate = new Date();
   const startDate = new Date('June 1, 2021');
   const diffInYears = currentDate.getFullYear() - startDate.getFullYear();
+  const message = messages[isEnglishLanguage ? 'en' : 'ptbr'].intro(diffInYears);
 
   return (
     <S.StyledAnimatedBackground>
@@ -15,8 +19,8 @@ const Home = () => {
           <S.Text>
             <img src='/square-me.png' alt='myself' />
             <div>
-              <Landing />
-              Sou desenvolvedora pela Ironhack com mais de {diffInYears} anos de experiência em desenvolvimento fullstack<br /><br />Minha jornada até aqui tem sido incrível, e estou ansiosa para continuar crescendo, aprendendo e contribuindo com novas soluções<br /><br /> Se você busca ajuda ou quer trocar ideias, estou á disposição para colaborar!
+              <AboutMe />
+              {message}
             </div>
           </S.Text>
         </Container>
