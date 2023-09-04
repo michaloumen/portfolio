@@ -1,4 +1,4 @@
-import messages from "../../../utils/messages";
+import messages from '../../../utils/messages';
 
 const NavItems = (isEnglishLanguage) => {
   const navigationMessages = messages[isEnglishLanguage ? 'en' : 'ptbr'].navigation;

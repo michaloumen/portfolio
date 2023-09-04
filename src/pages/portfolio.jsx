@@ -1,5 +1,7 @@
-const PagePortfolio = () => {
-  return <p>PagePortfolio</p>;
-}
+import Portfolio from '../components/templates/Portfolio';
+
+const PagePortfolio = () => (
+  <Portfolio />
+);
 
 export default PagePortfolio;

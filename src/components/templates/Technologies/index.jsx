@@ -38,17 +38,15 @@ const Technologies = () => {
   );
 
   return (
-    <S.StyledAnimatedBackground>
-      <AnimatedBackground>
-        <Container>
-          <S.HeaderText>
-            <span>{technologiesTextMessages.header}</span>
-            {renderText()}
-            {renderTechnologies()}
-          </S.HeaderText>
-        </Container>
-      </AnimatedBackground>
-    </S.StyledAnimatedBackground>
+    <AnimatedBackground>
+      <Container>
+        <S.HeaderText>
+          <span>{technologiesTextMessages.header}</span>
+          {renderText()}
+          {renderTechnologies()}
+        </S.HeaderText>
+      </Container>
+    </AnimatedBackground>
   );
 };
 

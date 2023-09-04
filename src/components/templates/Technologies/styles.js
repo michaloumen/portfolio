@@ -1,15 +1,6 @@
 import styled from 'styled-components';
 import { color } from '../../../styles';
 
-export const StyledAnimatedBackground = styled.div`
-  // ${(props) => props.listContainer && `
-  //   @media (max-width: 1600px) { max-height: 1000px }
-  //   @media (max-width: 1200px) { max-height: 1400px; }
-  //   @media (max-width: 900px) { max-height: 1740px; }
-  //   @media (max-width: 700px) { max-height: 3000px; }
-  // `}
-`;
-
 export const HeaderText = styled.div`
   span {
     font-size: 2.5rem;
