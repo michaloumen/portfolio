@@ -1,14 +1,6 @@
 import styled from 'styled-components';
 import Modal from 'react-modal';
 
-export const ModalOverlay = styled.div`
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  top: 0;
-  left: 0;
-`;
-
 export const StyledModal = styled(Modal)`
   position: fixed;
   top: 50%;
@@ -17,10 +9,19 @@ export const StyledModal = styled(Modal)`
   outline: none;
   padding: 20px;
   background-color: white;
-  border-radius: 4px;
+  border-radius: 6px;
   div {
     display: flex;
     cursor: pointer;
     justify-content: right;
   }
+`;
+
+export const Header = styled.button`
+  display: flex;
+  cursor: pointer;
+  background-color: transparent; 
+  border: none; 
+  padding: 0;
+  margin-left: auto;
 `;

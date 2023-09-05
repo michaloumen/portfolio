@@ -6,7 +6,7 @@ const messages = {
       portfolio: 'Portfolio',
       contact: 'Contact',
     },
-    intro: (diffInYears) => `I am a developer from Ironhack with over ${diffInYears} years of experience in fullstack development.
+    intro: (diffInYears) => `Hi, my name is Michelle and I have over ${diffInYears} years of experience in fullstack development.
       My journey so far has been incredible, and I'm excited to continue growing, learning, and contributing to new solutions.
       If you're seeking help or want to exchange ideas, I'm available to collaborate!`,
     landing: {
@@ -35,7 +35,7 @@ const messages = {
       portfolio: 'Portfólio',
       contact: 'Contato',
     },
-    intro: (diffInYears) => `Sou desenvolvedora pela Ironhack com mais de ${diffInYears} anos de experiência em desenvolvimento fullstack.
+    intro: (diffInYears) => `Oi, meu nome é Michelle e tenho mais de ${diffInYears} anos de experiência em desenvolvimento fullstack.
       Minha jornada até aqui tem sido incrível, e estou ansiosa para continuar crescendo, aprendendo e contribuindo com novas soluções.
       Se você busca ajuda ou quer trocar ideias, estou à disposição para colaborar!`,
     landing: {
