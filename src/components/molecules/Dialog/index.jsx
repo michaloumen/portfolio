@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import CloseIcon from '../../icons/CloseIcon';
 import * as S from './styles';
 
@@ -18,5 +19,11 @@ const Dialog = ({ open, onClose, children }) => (
     {children}
   </S.StyledModal>
 );
+
+Dialog.propTypes = {
+  open: PropTypes.bool,
+  onClose: PropTypes.func,
+  children: PropTypes.node
+};
 
 export default Dialog;

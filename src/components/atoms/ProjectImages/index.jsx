@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import * as S from './styles';
 
 const ProjectImages = ({ title, image, onClick }) => (
@@ -6,5 +7,11 @@ const ProjectImages = ({ title, image, onClick }) => (
     <img src={image} alt='Project illustration' onClick={onClick} />
   </S.Container>
 );
+
+ProjectImages.propTypes = {
+  title: PropTypes.string,
+  image: PropTypes.node,
+  onClick: PropTypes.func
+};
 
 export default ProjectImages;
