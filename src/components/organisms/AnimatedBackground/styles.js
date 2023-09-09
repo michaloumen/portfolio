@@ -4,22 +4,23 @@ import {
   backgroundIcons1, 
   backgroundIcons2,
   backgroundIcons3,
-  backgroundIcons4
+  backgroundIcons4,
+  sizePx
 } from '../../../styles';
 
 export const AnimatedSection = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-color: ${color.purple};
   overflow: hidden;
+  background-color: ${color.purple};
 
   svg {
-    width: 150px;
-    height: 150px;
     fill: rgba(0, 0, 0, 0.1);
     transition: 0.2s;
-    margin: 0 5px;
+    margin: 0 ${sizePx['5']};
+    width: ${sizePx.icon150};
+    height: ${sizePx.icon150};
   }
 
   svg:hover {
@@ -34,9 +35,9 @@ export const AnimatedRow = styled.div`
   left: -50%;
   width: 100%;
   display: flex;
-  padding: 10px 0;
   white-space: nowrap;
   transform: rotate(-30deg);
+  margin: ${sizePx.margin} 0;
 
   div {
     animation: ${backgroundIcons1} 80s linear infinite;

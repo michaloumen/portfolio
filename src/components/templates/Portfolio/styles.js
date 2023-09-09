@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { color } from '../../../styles';
+import { color, font } from '../../../styles';
 
 export const Container = styled.div`
   a {
@@ -9,6 +9,6 @@ export const Container = styled.div`
 `;
 
 export const Header = styled.div`
-  font-size: 2.5rem;
   color: ${color.yellow};
+  font-size: ${font.header};
 `;

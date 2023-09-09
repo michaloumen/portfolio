@@ -13,19 +13,17 @@ const Home = () => {
   const message = messages[isEnglishLanguage ? 'en' : 'ptbr'].intro(diffInYears);
 
   return (
-    <S.StyledAnimatedBackground>
-      <AnimatedBackground>
-        <Container>
-          <S.Text>
-            <img src='/square-me.png' alt='myself' />
-            <div>
-              <AboutMe />
-              {message}
-            </div>
-          </S.Text>
-        </Container>
-      </AnimatedBackground>
-    </S.StyledAnimatedBackground>
+    <AnimatedBackground>
+      <Container>
+        <S.Text>
+          <img src='/square-me.png' alt='myself' />
+          <div>
+            <AboutMe />
+            {message}
+          </div>
+        </S.Text>
+      </Container>
+    </AnimatedBackground>
   );
 };
 

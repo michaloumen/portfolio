@@ -1,7 +1,8 @@
 import styled from 'styled-components';
+import { sizeRem } from '../../../styles';
 
 export const Wrapper = styled.div`
-  max-width: 74rem;
+  max-width: ${sizeRem.maxWidth};
 `;
 
 export const CarouselWrapper = styled.div`

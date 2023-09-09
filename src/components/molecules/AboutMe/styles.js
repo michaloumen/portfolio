@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import color from '../../../styles/color';
+import { color, font } from '../../../styles';
 
 export const LandingType = styled.div`
-  font-size: 2.5rem;
+  font-size: ${font.header};
   color: ${color.yellow};
 `;

@@ -1,18 +1,16 @@
 import styled from 'styled-components';
-import color from '../../../styles/color';
+import { color, font } from '../../../styles';
 
 export const TextArea = styled.div`
   textarea {
     border: none;
-    font-weight: bold;
     width: 100%;
-    color: ${color.yellow};
     overflow: auto;
     outline: none;
     resize: none;
     background: transparent;
-    font-size: 1.5rem
-    color: red;
+    color: ${color.yellow};
+    font-weight: ${font.weight600};
   }
 `;
 

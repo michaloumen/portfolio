@@ -1,13 +1,13 @@
 import styled from 'styled-components';
-import { color } from '../../../styles';
+import { color, font, sizePx } from '../../../styles';
 
 export const NavbarContainer = styled.div`
-  letter-spacing: 1px;
-  padding: 1.2rem 50px;
-  font-size: 1.2rem;
-  font-weight: 600;
   background-color: ${color.blue};
   color: ${color.gray};
+  font-size: ${font.secondaryHeaderM};
+  letter-spacing: ${font.letterSpacing};
+  font-weight: ${font.weight600};
+  padding: ${sizePx.padding} ${sizePx['50']};
 `;
 
 export const MenuDesktop = styled.div`
@@ -35,9 +35,9 @@ export const MenuMobile = styled.div`
 
 export const StyledMenuIcon = styled.div`
   svg {
-    width: 1.5rem;
-    height: 1.5rem;
     cursor: pointer;
+    width: ${sizePx.icon24};
+    height: ${sizePx.icon24};
   }
 `;
 

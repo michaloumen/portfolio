@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import NavbarLinks from '../../molecules/NavbarLinks';
 import MenuIcon from '../../icons/MenuIcon';
-import Tradutor from '../Tradutor';
+import Tradutor from '../../atoms/Tradutor';
 import * as S from './styles';
 
 const Navbar = () => {

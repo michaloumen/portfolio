@@ -1,16 +1,16 @@
 import styled from 'styled-components';
-import { color, rotateMenu, space } from '../../../styles';
+import { color, rotateMenu, sizePx, sizeRem } from '../../../styles';
 
 export const NavbarLinksContainer = styled.div`
   display: flex;
   white-space: nowrap;
   cursor: pointer;
   animation: ${rotateMenu} 0.6s;
-  gap: ${space.gap};
+  gap: ${sizeRem.gap};
 
   @media (max-width: 768px) {
     flex-direction: column;
-    padding-top: 10px;
+    margin-top: ${sizePx.margin};
   }
 
   div {

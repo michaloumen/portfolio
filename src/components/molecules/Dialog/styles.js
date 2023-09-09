@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import Modal from 'react-modal';
+import { color, sizePx } from '../../../styles';
 
 export const StyledModal = styled(Modal)`
   position: fixed;
@@ -7,9 +8,9 @@ export const StyledModal = styled(Modal)`
   left: 50%;
   transform: translate(-50%, -50%);
   outline: none;
-  padding: 20px;
-  background-color: white;
-  border-radius: 6px;
+  background-color: ${color.gray};
+  border-radius: ${sizePx.borderRadius};
+  padding: ${sizePx.padding};
   div {
     display: flex;
     cursor: pointer;

@@ -1,30 +1,23 @@
 import styled from 'styled-components';
+import { font, sizePx } from '../../../styles';
 
 export const Container = styled.div`
   flex-direction: column;
-  font-size: 18px;
   cursor: default !important;
+  font-size: ${font.secondaryHeaderS};
 
   div {
-    margin: 10px 0; 
     justify-content: left;
-    font-weight: bold;
     cursor: default !important;
+    font-weight: ${font.weight500};
+    margin: ${sizePx.margin} 0; 
   }
 
   img {
-    border-radius: 6px;
+    border-radius: ${sizePx.borderRadius};
   }
 
   span {
-    margin: 10px 0; 
+    margin: ${sizePx.margin} 0; 
   }
-`;
-
-export const StyledLink = styled.button`
-  font-size: 16px;
-  display: flex;
-  background-color: transparent; 
-  border: none; 
-  padding: 0;
 `;

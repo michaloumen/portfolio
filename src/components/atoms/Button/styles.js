@@ -1,20 +1,20 @@
 import styled from 'styled-components';
-import colors from '../../../styles/color';
+import { sizePx, color } from '../../../styles';
 
 export const ButtonWrapper = styled.button`
-  background-color: ${colors.blue};
-  padding: 10px 20px;
+  background-color: ${color.blue};
   border: none;
-  border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  padding: ${sizePx.paddingButton};
+  border-radius: ${sizePx.borderRadius};
   a {
     text-decoration: none;
-    color: ${colors.gray};
     font-weight: bold;
+    color: ${color.gray};
   }
 
   &:hover {
-    background-color: ${colors.blue}cc;
+    background-color: ${color.blue}cc;
   }
 `;
