@@ -15,7 +15,6 @@ export const HeaderText = styled.div`
 `;
 
 export const BodyText = styled.div`
-  margin: ${sizePx.margin};
   span {
     pointer-events: auto;
     color: ${color.gray};
@@ -28,7 +27,7 @@ export const ListContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 50px;
-  margin: 40px;
+  margin-top: ${sizePx.paddingM};
 
   @media (max-width: 1200px) { grid-template-columns: repeat(4, 1fr); }
   @media (max-width: 900px) { grid-template-columns: repeat(3, 1fr); }

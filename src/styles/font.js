@@ -1,7 +1,8 @@
 const font = {
   header: '40px',
-  secondaryHeaderS: '18px',
   secondaryHeaderM: '20px',
+  secondaryHeaderS: '18px',
+  text: '16px',
   letterSpacing: '1px',
   weight500: '500',
   weight600: '600'

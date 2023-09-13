@@ -6,7 +6,7 @@ export const Text = styled.div`
   align-items: center;
   color: ${color.gray};
   font-size: ${font.secondaryHeaderS};
-  gap: ${sizePx.padding};
+  gap: ${sizePx.paddingS};
   img {
     max-width: 50%;
     border-radius: 50%;

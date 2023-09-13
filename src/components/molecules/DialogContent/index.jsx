@@ -7,10 +7,12 @@ const DialogContent = ({ image, text, description, link }) => (
     <div>{text}</div>
     <img src={image} alt='Dialog illustration' />
     <span>{description}</span>
-    <Button
-      text={'Saiba mais'}
-      href={link}
-    />
+    <S.StyledButton>
+      <Button
+        text={'Saiba mais'}
+        href={link}
+      />
+    </S.StyledButton>
   </S.Container>
 );
 

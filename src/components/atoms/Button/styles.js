@@ -2,10 +2,11 @@ import styled from 'styled-components';
 import { sizePx, color } from '../../../styles';
 
 export const ButtonWrapper = styled.button`
-  background-color: ${color.blue};
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  width: 100%;
+  background-color: ${color.blue};
   padding: ${sizePx.paddingButton};
   border-radius: ${sizePx.borderRadius};
   a {

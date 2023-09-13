@@ -7,7 +7,7 @@ export const NavbarContainer = styled.div`
   font-size: ${font.secondaryHeaderM};
   letter-spacing: ${font.letterSpacing};
   font-weight: ${font.weight600};
-  padding: ${sizePx.padding} ${sizePx['50']};
+  padding: ${sizePx.paddingS} ${sizePx['50']};
 `;
 
 export const MenuDesktop = styled.div`

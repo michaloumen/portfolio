@@ -3,6 +3,8 @@ import Modal from 'react-modal';
 import { color, sizePx } from '../../../styles';
 
 export const StyledModal = styled(Modal)`
+  width: ${sizePx.modalWidthM};
+  height: ${sizePx.modalHeight};
   position: fixed;
   top: 50%;
   left: 50%;
@@ -10,11 +12,17 @@ export const StyledModal = styled(Modal)`
   outline: none;
   background-color: ${color.gray};
   border-radius: ${sizePx.borderRadius};
-  padding: ${sizePx.padding};
+  padding: ${sizePx.paddingS};
+
   div {
     display: flex;
     cursor: pointer;
     justify-content: right;
+  }
+
+  @media (max-width: 900px) { 
+    width: ${sizePx.modalWidthS};
+    height: ${sizePx.modalHeightS};
   }
 `;
 
