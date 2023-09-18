@@ -1,8 +1,12 @@
 import styled from 'styled-components';
-import { sizeRem } from '../../../styles';
+import { sizeRem, sizePx } from '../../../styles';
 
 export const Wrapper = styled.div`
   max-width: ${sizeRem.maxWidth};
+  svg {
+    width: ${sizePx.icon150};
+    height: ${sizePx.icon100};
+  }
 `;
 
 export const CarouselWrapper = styled.div`

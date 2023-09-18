@@ -11,13 +11,19 @@ export const Container = styled.div`
     max-width: 100%;
     height: auto;
   }
+  margin-bottom: ${sizePx.margin};
   padding: ${sizePx.paddingS};
   border-radius: ${sizePx.borderRadius};
   
+  @media (max-width: 700px) { 
+    width: ${sizePx.icon100};
+    height: ${sizePx.icon100};
+  }
   svg {
     width: ${sizePx.icon100};
     height: ${sizePx.icon100};
     margin-top: ${sizePx.margin};
+    
     @media (max-width: 700px) { 
       width: ${sizePx.icon80};
       height: ${sizePx.icon80};
@@ -26,6 +32,5 @@ export const Container = styled.div`
 `;
 
 export const Text = styled.div`
-  letter-spacing: ${font.letterSpacing};
   font-weight: ${font.weight500};
   `;

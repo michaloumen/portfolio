@@ -33,7 +33,9 @@ const Technologies = () => {
     showList ? (
       <S.ListContainer><TechnologiesList /></S.ListContainer>
     ) : (
-      <Carousel listContainer>{TechnologiesList()}</Carousel>
+      <Carousel listContainer>
+        {TechnologiesList()}
+      </Carousel>
     )
   );
 
