@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import NavbarLinks from '../../molecules/NavbarLinks';
+import NavbarList from '../../molecules/NavbarList';
 import MenuIcon from '../../icons/MenuIcon';
 import Tradutor from '../../atoms/Tradutor';
 import * as S from './styles';
@@ -14,7 +14,7 @@ const Navbar = () => {
             Michelle Mendonça
           </S.NavbarName>
           <div>
-            <NavbarLinks />
+            <NavbarList />
             <Tradutor />
           </div>
         </S.MenuDesktop>
@@ -26,7 +26,7 @@ const Navbar = () => {
               <Tradutor />
             </div>
           </S.NavbarName>
-          {showLinks && <NavbarLinks />}
+          {showLinks && <NavbarList />}
         </S.MenuMobile>
       </S.NavbarContainer>
   )

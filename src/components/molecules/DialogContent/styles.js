@@ -23,7 +23,7 @@ export const Container = styled.div`
 
   span {
     margin: ${sizePx.margin} 0; 
-    font-size: ${font.textM};
+    font-size: ${font.text};
   }
 `;
 

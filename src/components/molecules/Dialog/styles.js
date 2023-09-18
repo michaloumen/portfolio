@@ -12,7 +12,7 @@ export const StyledModal = styled(Modal)`
   outline: none;
   background-color: ${color.gray};
   border-radius: ${sizePx.borderRadius};
-  padding: ${sizePx.paddingS};
+  padding: ${sizePx.paddingM};
 
   div {
     display: flex;
