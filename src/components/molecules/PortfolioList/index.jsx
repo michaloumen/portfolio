@@ -1,12 +1,13 @@
 import PortfolioItems from '../../atoms/PortfolioItems';
 import ProjectImages from '../../atoms/ProjectImages';
 import { useLanguageContext } from '../../../hooks/languageProvider';
+import * as S from './styles';
 
 const PortfolioList = ({ handleOpenModal }) => {
   const { isEnglishLanguage } = useLanguageContext();
   
   return (
-    <>
+    <S.PortfolioListContainer>
       {PortfolioItems(isEnglishLanguage).map((item, index) => (
         <ProjectImages
           key={index}
@@ -20,7 +21,7 @@ const PortfolioList = ({ handleOpenModal }) => {
           )}
         />
       ))}
-    </>
+    </S.PortfolioListContainer>
   );
 };
 

@@ -7,14 +7,13 @@ export const Container = styled.div`
   align-items: center;
   background: linear-gradient(-45deg, #FFB830, #233E8B);
   background-size: 400% 400%;
-  width: ${sizePx.icon150};
-  height: ${sizePx.icon150};
+  img {
+    max-width: 100%;
+    height: auto;
+  }
   padding: ${sizePx.paddingS};
   border-radius: ${sizePx.borderRadius};
-  @media (max-width: 700px) { 
-    width: ${sizePx.icon100};
-    height: ${sizePx.icon100};
-  }
+  
   svg {
     width: ${sizePx.icon100};
     height: ${sizePx.icon100};

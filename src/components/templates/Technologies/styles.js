@@ -27,7 +27,7 @@ export const ListContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 50px;
-  margin-top: ${sizePx.paddingM};
+  margin-top: ${sizePx.paddingG};
 
   @media (max-width: 1200px) { grid-template-columns: repeat(4, 1fr); }
   @media (max-width: 900px) { grid-template-columns: repeat(3, 1fr); }

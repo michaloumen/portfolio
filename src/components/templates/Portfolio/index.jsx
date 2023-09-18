@@ -62,9 +62,7 @@ const Portfolio = () => {
               >{portfolioTextMessages.clickHere}</a>
             </div>
           </S.Header>
-          <S.ListContainer>
           <PortfolioList handleOpenModal={handleOpenModal} />
-          </S.ListContainer>
         </S.Container>
       </Container>
     </AnimatedBackground>
