@@ -5,6 +5,7 @@ const ProjectImages = ({ title, image, onClick }) => (
   <S.Container>
     <div>{title}</div>
     <img src={image} alt='Project illustration' onClick={onClick} />
+    {/* imagens tamanho 878x566 */}
   </S.Container>
 );
 

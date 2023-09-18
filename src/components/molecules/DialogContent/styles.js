@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { font, sizePx } from '../../../styles';
+import { color, font, sizePx } from '../../../styles';
 
 export const Container = styled.div`
   flex-direction: column;
@@ -8,11 +8,12 @@ export const Container = styled.div`
   height: 100%;
   width: 100%;
   font-size: ${font.secondaryHeaderS};
+  color: ${color.blue};
   
   div {
     justify-content: left;
     cursor: default !important;
-    font-weight: ${font.weight500};
+    font-weight: ${font.weight600};
     margin: ${sizePx.margin} 0; 
   }
 
@@ -22,12 +23,13 @@ export const Container = styled.div`
 
   span {
     margin: ${sizePx.margin} 0; 
-    font-size: ${font.text};
+    font-size: ${font.textM};
   }
 `;
 
-export const StyledButton = styled.div`
+export const StyledButton = styled.button`
   position: absolute;
-  bottom: 0;
   width: 100%;
+  border: none;
+  bottom: ${sizePx['5']};
 `;

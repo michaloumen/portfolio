@@ -10,10 +10,17 @@ export const Container = styled.div`
   img {
     cursor: pointer;
     border-radius: 6px;
+    width: ${sizePx.icon300};
+    height: 193.15px;
+    overflow: hidden; 
   }
 
   div {
     padding-bottom: ${sizePx['5']};
-    font-weight: ${font.weight500};
+    font-weight: ${font.weight600};
+    
+    @media (max-width: 1000px) { 
+      font-size: ${font.textS};
+    }
   }
 `;

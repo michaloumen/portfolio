@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { sizePx, color } from '../../../styles';
+import { font, sizePx, color } from '../../../styles';
 
 export const ButtonWrapper = styled.button`
   border: none;
@@ -9,11 +9,8 @@ export const ButtonWrapper = styled.button`
   background-color: ${color.blue};
   padding: ${sizePx.paddingButton};
   border-radius: ${sizePx.borderRadius};
-  a {
-    text-decoration: none;
-    font-weight: bold;
-    color: ${color.gray};
-  }
+  font-weight: ${font.weight600};
+  color: ${color.gray};
 
   &:hover {
     background-color: ${color.blue}cc;

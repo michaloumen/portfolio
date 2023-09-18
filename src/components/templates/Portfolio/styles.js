@@ -23,6 +23,8 @@ export const ListContainer = styled.div`
     gap: ${sizePx.paddingS};
     img {
       width: ${sizePx.icon150};
+      height: 96.67px;
+      overflow: hidden;
     }
   }
 `;
