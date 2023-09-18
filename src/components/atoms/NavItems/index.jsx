@@ -1,7 +1,7 @@
-import messages from '../../../utils/messages';
+import texts from '../../../utils/texts';
 
 const NavItems = (isEnglishLanguage) => {
-  const navigationMessages = messages[isEnglishLanguage ? 'en' : 'ptbr'].navigation;
+  const navigationMessages = texts[isEnglishLanguage ? 'en' : 'ptbr'].navigation;
 
   return [
     {

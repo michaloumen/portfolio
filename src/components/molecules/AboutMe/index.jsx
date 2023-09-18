@@ -1,11 +1,11 @@
 import { useLanguageContext } from '../../../hooks/languageProvider';
 import Typewritter from '../../organisms/Typewritter';
-import messages from '../../../utils/messages';
+import texts from '../../../utils/texts';
 import * as S from './styles';
 
 const AboutMe = () => {
   const { isEnglishLanguage } = useLanguageContext();
-  const landing = messages[isEnglishLanguage ? 'en' : 'ptbr'].landing;
+  const landing = texts[isEnglishLanguage ? 'en' : 'ptbr'].landing;
 
   return (
     <S.LandingType>

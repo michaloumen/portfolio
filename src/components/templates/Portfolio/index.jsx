@@ -1,13 +1,17 @@
 import { useState } from 'react';
+import { useLanguageContext } from '../../../hooks/languageProvider';
+import texts from '../../../utils/texts';
 import AnimatedBackground from '../../organisms/AnimatedBackground';
 import Container from '../../atoms/Container';
-import ProjectImages from '../../atoms/ProjectImages';
 import Dialog from '../../molecules/Dialog';
 import DialogContent from '../../molecules/DialogContent';
-import PortfolioItems from '../../atoms/PortfolioItems';
+import PortfolioList from '../../molecules/PortfolioList';
 import * as S from './styles';
 
 const Portfolio = () => {
+  const { isEnglishLanguage } = useLanguageContext();
+  const portfolioTextMessages = texts[isEnglishLanguage ? 'en' : 'ptbr'].portfolio;
+
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
   const [selectedText, setSelectedText] = useState(null);
@@ -49,29 +53,17 @@ const Portfolio = () => {
       <Container>
         <S.Container>
           <S.Header>
-            Meus projetos
+            {portfolioTextMessages.header}
             <div>
-              Aqui você encontrará alguns dos meus repositórios. Para ver todos, acesse minha <a
+              {portfolioTextMessages.subtitle} <a
                 href='https://github.com/michaloumen'
                 target='_blank'
                 rel='noreferrer'
-              >Página do GitHub</a>
+              >{portfolioTextMessages.clickHere}</a>
             </div>
           </S.Header>
           <S.ListContainer>
-            {PortfolioItems.map((item, index) => (
-              <ProjectImages
-                key={index}
-                title={item.title}
-                image={item.image}
-                onClick={() => handleOpenModal(
-                  item.image,
-                  item.title,
-                  item.description,
-                  item.link
-                )}
-              />
-            ))}
+          <PortfolioList handleOpenModal={handleOpenModal} />
           </S.ListContainer>
         </S.Container>
       </Container>

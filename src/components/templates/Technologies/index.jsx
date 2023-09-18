@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useLanguageContext } from '../../../hooks/languageProvider';
-import messages from '../../../utils/messages';
+import messages from '../../../utils/texts';
 import AnimatedBackground from '../../organisms/AnimatedBackground';
 import TechnologiesList from '../../molecules/TechnologiesList';
 import Carousel from '../../molecules/Carousel';
@@ -19,7 +19,7 @@ const Technologies = () => {
   const renderText = () => (
     showList ? (
       <S.BodyText>
-        {technologiesTextMessages.changeView}
+        {technologiesTextMessages.subtitle}
         <span onClick={() => toggleListContainer()}> {technologiesTextMessages.clickHere}</span>
       </S.BodyText>
     ) : (
