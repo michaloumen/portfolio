@@ -14,7 +14,7 @@ export const ButtonArrowContainer = styled.button`
   background-color: ${color.transparentWhite};
 
   svg {
-    transform: ${(props) => props.invertDirection && 'rotate(180deg)'}
+    transform: ${(props) => props.invertDirection && 'rotate(180deg)'};
   }
   
   svg {

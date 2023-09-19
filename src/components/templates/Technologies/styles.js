@@ -1,6 +1,16 @@
 import styled from 'styled-components';
 import { color, font, sizePx } from '../../../styles';
 
+export const Wrapper = styled.div`
+  display: flex;
+  overflow: hidden;
+  max-height: calc(100vh - 64px); 
+
+  @media (max-width: 1400px) { max-height: 82rem; }
+  @media (max-width: 900px) { max-height: 75rem; }
+  @media (max-width: 700px) { max-height: 100rem; }
+`;
+
 export const HeaderText = styled.div`
   span {
     cursor: pointer;

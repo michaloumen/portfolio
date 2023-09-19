@@ -40,15 +40,17 @@ const Technologies = () => {
   );
 
   return (
-    <AnimatedBackground>
-      <Container>
-        <S.HeaderText>
-          <span>{technologiesTextMessages.header}</span>
-          {renderText()}
-          {renderTechnologies()}
-        </S.HeaderText>
-      </Container>
-    </AnimatedBackground>
+    <S.Wrapper>
+      <AnimatedBackground>
+        <Container>
+          <S.HeaderText>
+            <span>{technologiesTextMessages.header}</span>
+            {renderText()}
+            {renderTechnologies()}
+          </S.HeaderText>
+        </Container>
+      </AnimatedBackground>
+    </S.Wrapper>
   );
 };
 

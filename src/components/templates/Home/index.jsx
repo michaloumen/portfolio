@@ -14,18 +14,20 @@ const Home = () => {
   const message = texts[isEnglishLanguage ? 'en' : 'ptbr'].intro(diffInYears);
 
   return (
-    <AnimatedBackground>
-      <Container>
-        <S.Text>
-          <img src='/square-me.png' alt='myself' />
-          <div>
-            <AboutMe />
-            {message}
-          </div>
-          <HomeContact />
-        </S.Text>
-      </Container>
-    </AnimatedBackground>
+    <S.Wrapper>
+      <AnimatedBackground>
+        <Container>
+          <S.Text>
+            <img src='/square-me.png' alt='myself' />
+            <div>
+              <AboutMe />
+              {message}
+            </div>
+            <HomeContact />
+          </S.Text>
+        </Container>
+      </AnimatedBackground>
+    </S.Wrapper>
   );
 };
 

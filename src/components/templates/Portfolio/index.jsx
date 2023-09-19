@@ -35,37 +35,39 @@ const Portfolio = () => {
   };
 
   return (
-    <AnimatedBackground>
-      {isModalOpen && (
-        <Dialog
-          open={isModalOpen}
-          onClose={handleCloseModal}
-          children={
-            <DialogContent
-              image={selectedImage}
-              text={selectedText}
-              description={selectedDescription}
-              link={selectedLink}
-            />
-          }
-        />
-      )}
-      <Container>
-        <S.Container>
-          <S.Header>
-            {portfolioTextMessages.header}
-            <div>
-              {portfolioTextMessages.subtitle} <a
-                href='https://github.com/michaloumen'
-                target='_blank'
-                rel='noreferrer'
-              >{portfolioTextMessages.clickHere}</a>
-            </div>
-          </S.Header>
-          <PortfolioList handleOpenModal={handleOpenModal} />
-        </S.Container>
-      </Container>
-    </AnimatedBackground>
+    <S.Wrapper>
+      <AnimatedBackground>
+        {isModalOpen && (
+          <Dialog
+            open={isModalOpen}
+            onClose={handleCloseModal}
+            children={
+              <DialogContent
+                image={selectedImage}
+                text={selectedText}
+                description={selectedDescription}
+                link={selectedLink}
+              />
+            }
+          />
+        )}
+        <Container>
+          <S.Container>
+            <S.Header>
+              {portfolioTextMessages.header}
+              <div>
+                {portfolioTextMessages.subtitle} <a
+                  href='https://github.com/michaloumen'
+                  target='_blank'
+                  rel='noreferrer'
+                >{portfolioTextMessages.clickHere}</a>
+              </div>
+            </S.Header>
+            <PortfolioList handleOpenModal={handleOpenModal} />
+          </S.Container>
+        </Container>
+      </AnimatedBackground>
+    </S.Wrapper>
   );
 };
 

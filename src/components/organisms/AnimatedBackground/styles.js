@@ -9,11 +9,10 @@ import {
 } from '../../../styles';
 
 export const AnimatedSection = styled.div`
-  width: 100%;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
   background-color: ${color.purple};
+  overflow: hidden;
 
   svg {
     fill: rgba(0, 0, 0, 0.1);
