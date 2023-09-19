@@ -71,7 +71,7 @@ const texts = {
       ]
     },
     technologies: {
-      header: 'Algumas das technologias que uso',
+      header: 'Algumas das tecnologias que uso',
       subtitle: 'Não existe nenhum motivo para colocar essa mesma lista em um Carrossel. Mas eu quis fazer mesmo assim!',
       clickHere: 'Clique aqui e veja o 🎠 modo Carrossel 🎠',
       back: 'Volte para a visualização anterior'
@@ -92,7 +92,7 @@ const texts = {
       },
       {
         header: 'API Express.js',
-        description: 'Projeto para exercitar construção de API usando Express.js, Middleware, Handlebars, Next.js e MVC (Model-View-Controller). Através de rotas permite adicionar amigos por meio de solicitações POST em /friends. Além disso, é possível ver a lista completa de amigos ou obter informações sobre um amigo específico com base no ID fornecido.'
+        description: 'Projeto para exercitar construção de API usando Express.js, Middleware, Handlebars, Next.js e MVC (Model-View-Controller). Através de rotas, permite adicionar amigos por meio de solicitações POST em /friends. Além disso, é possível ver a lista completa de amigos ou obter informações sobre um amigo específico com base no ID fornecido.'
       }
     ],
     portfolioDialogButton: 'Saiba mais'

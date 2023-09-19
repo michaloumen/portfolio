@@ -1,5 +1,7 @@
-const PageContact = () => {
-  return <p>PageContact</p>;
-}
+import Contact from "../components/templates/Contact";
+
+const PageContact = () => (
+  <Contact />
+);
 
 export default PageContact;
