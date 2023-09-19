@@ -6,6 +6,11 @@ export const Wrapper = styled.div`
   svg {
     width: ${sizePx.icon150};
     height: ${sizePx.icon100};
+
+    @media (max-width: 700px) { 
+        width: ${sizePx.icon80};
+        height: ${sizePx.icon80};
+    }
   }
 `;
 

@@ -15,10 +15,6 @@ export const Container = styled.div`
   padding: ${sizePx.paddingS};
   border-radius: ${sizePx.borderRadius};
   
-  @media (max-width: 700px) { 
-    width: ${sizePx.icon100};
-    height: ${sizePx.icon100};
-  }
   svg {
     width: ${sizePx.icon100};
     height: ${sizePx.icon100};
