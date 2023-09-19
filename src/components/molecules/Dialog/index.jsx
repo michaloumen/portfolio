@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import CloseIcon from '../../icons/CloseIcon';
+import { CloseIcon } from '../../icons';
 import * as S from './styles';
 
 const Dialog = ({ open, onClose, children }) => (

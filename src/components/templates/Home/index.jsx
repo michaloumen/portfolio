@@ -3,6 +3,7 @@ import AnimatedBackground from '../../organisms/AnimatedBackground';
 import Container from '../../atoms/Container';
 import { useLanguageContext } from '../../../hooks/languageProvider';
 import texts from '../../../utils/texts';
+import HomeContact from '../../molecules/HomeContact';
 import * as S from './styles';
 
 const Home = () => {
@@ -21,6 +22,7 @@ const Home = () => {
             <AboutMe />
             {message}
           </div>
+          <HomeContact />
         </S.Text>
       </Container>
     </AnimatedBackground>

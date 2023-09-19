@@ -1,4 +1,4 @@
-import texts from "../../../utils/texts";
+import texts from '../../../utils/texts';
 
 const PortfolioItems = (isEnglishLanguage) => {
   const portfolioItemsMessages = texts[isEnglishLanguage ? 'en' : 'ptbr'].portfolioItems;

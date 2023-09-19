@@ -5,7 +5,6 @@ import Navbar from './components/molecules/Navbar';
 import PageHome from './pages/home';
 import PageTechnologies from './pages/technologies';
 import PagePortfolio from './pages/portfolio';
-import PageContact from './pages/contact';
 import LanguageProvider from './hooks/languageProvider';
 
 const PageTitleUpdater = () => {
@@ -19,8 +18,7 @@ const PageTitleUpdater = () => {
   const pageTitleMap = {
     '/': 'Michelle Portfolio',
     '/technologies': 'Technologies',
-    '/portfolio': 'Portfolio',
-    '/contact': 'Contact',
+    '/portfolio': 'Portfolio'
   };
 
   const getPageTitle = (path) => {
@@ -35,10 +33,9 @@ const App = () => {
         <Navbar />
         <PageTitleUpdater />
         <Routes>
-          <Route path="/" element={<PageHome />} />
-          <Route path="/technologies" element={<PageTechnologies />} />
-          <Route path="/portfolio" element={<PagePortfolio />} />
-          <Route path="/contact" element={<PageContact />} />
+          <Route path='/' element={<PageHome />} />
+          <Route path='/technologies' element={<PageTechnologies />} />
+          <Route path='/portfolio' element={<PagePortfolio />} />
         </Routes>
       </BrowserRouter>
     </LanguageProvider>

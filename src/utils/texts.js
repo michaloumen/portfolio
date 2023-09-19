@@ -3,12 +3,11 @@ const texts = {
     navigation: {
       home: 'Home',
       technologies: 'Technologies',
-      portfolio: 'Portfolio',
-      contact: 'Contact',
+      portfolio: 'Portfolio'
     },
-    intro: (diffInYears) => `Hi, my name is Michelle and I have over ${diffInYears} years of experience in fullstack development.
-      My journey so far has been incredible, and I'm excited to continue growing, learning, and contributing to new solutions.
-      If you're seeking help or want to exchange ideas, I'm available to collaborate!`,
+    intro: (diffInYears) => `Hi, my name is Michelle, and I have over ${diffInYears} years of experience in fullstack development.
+    My journey so far has been incredible, and I'm looking forward to continuing to learn and contribute to new solutions.
+    If you're looking for assistance or want to exchange ideas, connect with me by clicking on the Linkedin, Github, or Email icons!`,    
     landing: {
       whoAmI: 'Who am I?',
       typewritter: [
@@ -21,6 +20,7 @@ const texts = {
         ' '
       ]
     },
+    contactMenu: 'Copied email!',
     technologies: {
       header: 'Some of the technologies I use',
       subtitle: 'There is no reason to put that same list on a carousel. But I wanted to do it anyway!',
@@ -52,12 +52,11 @@ const texts = {
     navigation: {
       home: 'Início',
       technologies: 'Tecnologias',
-      portfolio: 'Portfólio',
-      contact: 'Contato',
+      portfolio: 'Portfólio'
     },
     intro: (diffInYears) => `Oi, meu nome é Michelle e tenho mais de ${diffInYears} anos de experiência em desenvolvimento fullstack.
-      Minha jornada até aqui tem sido incrível, e estou ansiosa para continuar crescendo, aprendendo e contribuindo com novas soluções.
-      Se você busca ajuda ou quer trocar ideias, estou à disposição para colaborar!`,
+      Minha jornada até aqui tem sido incrível, e estou ansiosa para continuar aprendendo e contribuindo com novas soluções.
+      Se você busca ajuda ou quer trocar ideias, se conecte comigo clicando nos ícones do Linkedin, Github ou Email!`,
     landing: {
       whoAmI: 'Quem sou eu?',
       typewritter: [
@@ -70,6 +69,7 @@ const texts = {
         ' '
       ]
     },
+    contactMenu: 'Email copiado!',
     technologies: {
       header: 'Algumas das tecnologias que uso',
       subtitle: 'Não existe nenhum motivo para colocar essa mesma lista em um Carrossel. Mas eu quis fazer mesmo assim!',
