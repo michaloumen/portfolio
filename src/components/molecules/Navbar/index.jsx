@@ -7,6 +7,10 @@ import * as S from './styles';
 const Navbar = () => {
   const [showLinks, setShowLinks] = useState(false);
 
+  const closeMenu = () => {
+    setShowLinks(false);
+  };
+
   return (
       <S.NavbarContainer>
         <S.MenuDesktop>
@@ -14,7 +18,7 @@ const Navbar = () => {
             Michelle Mendonça
           </S.NavbarName>
           <div>
-            <NavbarList />
+            <NavbarList closeMenu={closeMenu} />
             <Tradutor />
           </div>
         </S.MenuDesktop>
@@ -26,7 +30,7 @@ const Navbar = () => {
               <Tradutor />
             </div>
           </S.NavbarName>
-          {showLinks && <NavbarList />}
+          {showLinks && <NavbarList closeMenu={closeMenu} />}
         </S.MenuMobile>
       </S.NavbarContainer>
   )

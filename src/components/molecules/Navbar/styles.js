@@ -34,6 +34,7 @@ export const MenuMobile = styled.div`
 `;
 
 export const StyledMenuIcon = styled.div`
+  margin-right: ${sizePx.margin};
   svg {
     cursor: pointer;
     width: ${sizePx.icon24};
@@ -46,3 +47,4 @@ export const NavbarName = styled.div`
   justify-content: space-between;
   white-space: nowrap;
 `;
+
