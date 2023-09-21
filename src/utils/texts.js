@@ -6,7 +6,7 @@ const texts = {
       portfolio: 'Portfolio'
     },
     intro: (diffInYears) => `Hi, my name is Michelle, and I have over ${diffInYears} years of experience in fullstack development.
-    My journey so far has been incredible, and I'm looking forward to continuing to learn and contribute to new solutions.
+    My journey so far has been incredible, and I'm looking forward to keep learning and contributing to new solutions.
     If you're looking for assistance or want to exchange ideas, connect with me by clicking on the Linkedin, Github, or Email icons!`,    
     landing: {
       whoAmI: 'Who am I?',
@@ -24,7 +24,7 @@ const texts = {
     technologies: {
       header: 'Some of the technologies I use',
       subtitle: 'There is no reason to put that same list on a carousel. But I wanted to do it anyway!',
-      clickHere: 'Click here to see 🎠 Carrossel mode 🎠',
+      clickHere: 'Click here to see Carousel mode 🎠',
       back: 'Back to previous view'
     },
     portfolio: {
@@ -72,13 +72,13 @@ const texts = {
     contactMenu: 'Email copiado!',
     technologies: {
       header: 'Algumas das tecnologias que uso',
-      subtitle: 'Não existe nenhum motivo para colocar essa mesma lista em um Carrossel. Mas eu quis fazer mesmo assim!',
-      clickHere: 'Clique aqui e veja o 🎠 modo Carrossel 🎠',
+      subtitle: 'Não existe nenhum motivo para colocar essa mesma lista em um carrossel. Mas eu quis fazer mesmo assim!',
+      clickHere: 'Clique aqui e veja o modo Carrossel 🎠',
       back: 'Volte para a visualização anterior'
     },
     portfolio: {
       header: 'Meus projetos',
-      subtitle: 'Aqui você encontrará alguns dos meus repositórios. Para ver todos, acessa minha',
+      subtitle: 'Aqui você encontrará alguns dos meus repositórios. Para ver todos, acesse minha',
       clickHere: 'página do GitHub'
     },
     portfolioItems: [

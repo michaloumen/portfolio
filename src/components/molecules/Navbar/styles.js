@@ -7,12 +7,12 @@ export const NavbarContainer = styled.div`
   font-size: ${font.secondaryHeaderM};
   letter-spacing: ${font.letterSpacing};
   font-weight: ${font.weight600};
-  padding: ${sizePx.paddingM} ${sizePx['50']};
 `;
 
 export const MenuDesktop = styled.div`
   display: flex;
   justify-content: space-between;
+  padding: ${sizePx.paddingM} ${sizePx['50']};
 
   @media (max-width: 769px) {
     display: none;
@@ -24,6 +24,7 @@ export const MenuDesktop = styled.div`
 `;
 
 export const MenuMobile = styled.div`
+  padding: ${sizePx.paddingM};
   div {
     display: flex;
   }

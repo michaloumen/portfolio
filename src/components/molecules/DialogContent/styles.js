@@ -14,7 +14,7 @@ export const Container = styled.div`
     justify-content: left;
     cursor: default !important;
     font-weight: ${font.weight600};
-    margin: ${sizePx.margin} 0; 
+    margin-bottom: ${sizePx.margin}; 
   }
 
   img {
