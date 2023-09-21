@@ -1,7 +1,7 @@
 ## About the Project
 
 This project was undertaken with the intention of enhancing my skills in structural organization, component design, and responsiveness using the Atomic Design methodology and minimal external dependencies (no Bootstrap, no Tailwind, just React).
-It is available for demonstration at https://michaportfolio.netlify.app/
+It is available at https://michaportfolio.netlify.app/
 
 ## Demo
 
