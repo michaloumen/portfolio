@@ -1,3 +1,4 @@
+import React from 'react';
 import PortfolioItems from '../../atoms/PortfolioItems';
 import ProjectImages from '../../atoms/ProjectImages';
 import { useLanguageContext } from '../../../hooks/languageProvider';

@@ -1,3 +1,4 @@
+import React from 'react';
 import { ReactComponent as Keyboard } from './keyboard.svg';
 import { ReactComponent as Code } from './code.svg';
 import { ReactComponent as JS } from './js.svg';

@@ -1,3 +1,4 @@
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import NavItems from '../../atoms/NavItems';
 import * as S from './styles';

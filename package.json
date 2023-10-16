@@ -44,7 +44,9 @@
   "devDependencies": {
     "@babel/preset-react": "^7.22.5",
     "@svgr/webpack": "^8.0.1",
+    "@testing-library/dom": "^9.3.3",
     "identity-obj-proxy": "^3.0.0",
-    "jest-svg-transformer": "^1.0.0"
+    "jest-svg-transformer": "^1.0.0",
+    "matchmedia-polyfill": "^0.3.2"
   }
 }

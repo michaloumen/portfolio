@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { LinkedinIcon, GithubIcon, EmailIcon } from '../../icons';
 import { useLanguageContext } from '../../../hooks/languageProvider';
 import texts from '../../../utils/texts';

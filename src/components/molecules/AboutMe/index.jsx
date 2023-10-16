@@ -1,3 +1,4 @@
+import React from 'react';
 import { useLanguageContext } from '../../../hooks/languageProvider';
 import Typewritter from '../../organisms/Typewritter';
 import texts from '../../../utils/texts';

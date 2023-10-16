@@ -1,3 +1,4 @@
+import React from 'react';
 import AboutMe from '../../molecules/AboutMe';
 import AnimatedBackground from '../../organisms/AnimatedBackground';
 import Container from '../../atoms/Container';

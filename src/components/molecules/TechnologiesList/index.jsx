@@ -1,3 +1,4 @@
+import React from 'react';
 import TechnologiesIcons from '../../icons/TecnologiesIcons';
 import * as S from './styles';
 

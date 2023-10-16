@@ -1,4 +1,4 @@
-import { useRef, memo } from 'react';
+import React, { useRef, memo } from 'react';
 import PropTypes from 'prop-types';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';

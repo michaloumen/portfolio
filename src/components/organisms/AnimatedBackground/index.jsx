@@ -1,3 +1,4 @@
+import React from 'react';
 import PropTypes from 'prop-types';
 import AnimatedBackgroundIcons from '../../icons/AnimatedBackgroundIcons';
 import * as S from './styles';

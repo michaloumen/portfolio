@@ -1,3 +1,4 @@
+import React from 'react';
 import PropTypes from 'prop-types';
 import { ArrowIcon } from '../../icons';
 import * as S from './styles';
