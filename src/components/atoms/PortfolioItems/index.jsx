@@ -5,6 +5,12 @@ const PortfolioItems = (isEnglishLanguage) => {
 
   return [
     {
+      image: 'project3.jpg',
+      title: portfolioItemsMessages[3].header,
+      description: portfolioItemsMessages[3].description,
+      link: 'https://github.com/michaloumen/odonto-website'
+    },
+    {
       image: 'project0.png',
       title: portfolioItemsMessages[0].header,
       description: portfolioItemsMessages[0].description,

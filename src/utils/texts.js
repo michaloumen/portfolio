@@ -44,6 +44,10 @@ const texts = {
       {
         header: 'Express.js API',
         description: 'Project to practice building an API using Express.js, Middleware, Handlebars, Next.js, and MVC (Model-View-Controller). Through routes, it allows adding friends via POST requests to /friends. Additionally, you can view the complete list of friends or get information about a specific friend based on the provided ID.'
+      },
+      {
+        header: 'MERN Product Show Case',
+        description: 'Currently, I am working on this project, so it is under construction. I am creating a showcase of dental products with the intention of building a fullstack project using the MERN stack (MongoDB, Express, React, and Node) - in addition to, of course, selling my dental materials!'
       }
     ],
     portfolioDialogButton: 'Know more'
@@ -93,6 +97,10 @@ const texts = {
       {
         header: 'API Express.js',
         description: 'Projeto para exercitar construção de API usando Express.js, Middleware, Handlebars, Next.js e MVC (Model-View-Controller). Através de rotas, permite adicionar amigos por meio de solicitações POST em /friends. Além disso, é possível ver a lista completa de amigos ou obter informações sobre um amigo específico com base no ID fornecido.'
+      },
+      {
+        header: 'MERN Vitrine de Produtos',
+        description: 'Atualmente estou trabalhando nesse projeto, por isso ele está em construção. Estou criando uma vitrine de produtos odontológicos com a intenção de construir um projeto fullstack usando a stack MERN (MongoDB, Express, React e Node) - além de, é claro, vender meus materiais odontológicos!'
       }
     ],
     portfolioDialogButton: 'Saiba mais'

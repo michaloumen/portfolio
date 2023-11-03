@@ -3,7 +3,7 @@ import { color, sizePx, sizeRem } from '../../../styles';
 
 export const Wrapper = styled.div`
   position: absolute;
-  width: 100%;
+  width: 70%;
   left: 50%;
   transform: translateX(-50%);
   backdrop-filter: blur(10px);

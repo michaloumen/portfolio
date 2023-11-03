@@ -4,10 +4,10 @@ import { color, font, sizePx } from '../../../styles';
 export const Wrapper = styled.div`
   display: flex;
   overflow: hidden;
-  max-height: calc(100vh - 64px); 
+  max-height: calc(150vh - 64px); 
 
-  @media (max-width: 1000px) { max-height: 82rem; }
-  @media (max-width: 769px) { max-height: 80rem; }
+  @media (max-width: 1000px) { max-height: 60rem; }
+  @media (max-width: 769px) { max-height: 110rem; }
 `;
 
 export const Container = styled.div`
