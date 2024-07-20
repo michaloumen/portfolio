@@ -4,7 +4,7 @@ import { color, sizePx, font } from '../../../styles';
 export const Container = styled.div`
   display: flex;
   pointer-events: auto;
-  color: ${color.yellow};
+  color: ${color.neonGreen};
   font-size: ${font.header};
   svg {
     cursor: pointer;
@@ -19,10 +19,10 @@ export const Container = styled.div`
 
 export const CopyEmail = styled.div`
   position: absolute;
-  background-color: ${color.blue};
+  background-color: ${color.tealBlue};
   border-radius: ${sizePx.borderRadius};
   padding: ${sizePx['5']};
-  color: ${color.gray};
+  color: ${color.black};
   font-weight: ${font.weight500};
   font-size: ${font.textS};
 `;

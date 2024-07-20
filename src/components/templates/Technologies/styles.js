@@ -14,22 +14,22 @@ export const Wrapper = styled.div`
 export const HeaderText = styled.div`
   span {
     cursor: pointer;
-    color: ${color.yellow};
+    color: ${color.black};
     font-size: ${font.header};
   }
   div {
     padding-top: ${sizePx['5']};
     font-size: ${font.secondaryHeaderS};
-    color: ${color.gray};
+    color: ${color.black};
   }
 `;
 
 export const BodyText = styled.div`
   span {
     pointer-events: auto;
-    color: ${color.gray};
+    color: ${color.black};
     font-size: ${font.secondaryHeaderS};
-    font-weight: ${font.weight500};
+    font-weight: ${font.weight600};
   }
 `;
 

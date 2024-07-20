@@ -5,11 +5,23 @@ const PortfolioItems = (isEnglishLanguage) => {
 
   return [
     {
-      image: 'project3.jpg',
+      image: 'project5.png',
+      title: portfolioItemsMessages[4].header,
+      description: portfolioItemsMessages[4].description,
+      link: 'https://github.com/michaloumen/property-pulse'
+    },
+    {
+      image: 'project4.png',
       title: portfolioItemsMessages[3].header,
       description: portfolioItemsMessages[3].description,
-      link: 'https://github.com/michaloumen/odonto-website'
+      link: 'https://github.com/michaloumen/swagger-setup'
     },
+    // {
+    //   image: 'project3.jpg',
+    //   title: portfolioItemsMessages[3].header,
+    //   description: portfolioItemsMessages[3].description,
+    //   link: 'https://github.com/michaloumen/odonto-website'
+    // },
     {
       image: 'project0.png',
       title: portfolioItemsMessages[0].header,

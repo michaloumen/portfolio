@@ -19,7 +19,7 @@ export const ButtonArrowContainer = styled.button`
   
   svg {
     path {
-      stroke: ${color.blue};
+      stroke: ${color.tealBlue};
     }
   }
 

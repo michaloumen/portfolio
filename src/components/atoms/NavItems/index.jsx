@@ -9,12 +9,12 @@ const NavItems = (isEnglishLanguage) => {
       itemPath: '/'
     },
     {
-      itemName: navigationMessages.technologies,
-      itemPath: '/technologies'
-    },
-    {
       itemName: navigationMessages.portfolio,
       itemPath: '/portfolio'
+    },
+    {
+      itemName: navigationMessages.technologies,
+      itemPath: '/technologies'
     },
     {
       itemName: navigationMessages.contact,

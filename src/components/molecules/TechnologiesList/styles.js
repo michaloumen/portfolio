@@ -5,7 +5,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(-45deg, #FFB830, #233E8B);
+  background: linear-gradient(-45deg, #000000, #FFFFFF);
   background-size: 400% 400%;
   img {
     max-width: 100%;

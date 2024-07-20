@@ -2,8 +2,8 @@ import styled from 'styled-components';
 import { color, font, sizePx } from '../../../styles';
 
 export const NavbarContainer = styled.div`
-  background-color: ${color.blue};
-  color: ${color.gray};
+  background-color: ${color.tealBlue};
+  color: ${color.black};
   font-size: ${font.secondaryHeaderM};
   letter-spacing: ${font.letterSpacing};
   font-weight: ${font.weight600};

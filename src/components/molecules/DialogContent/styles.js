@@ -8,7 +8,6 @@ export const Container = styled.div`
   height: 100%;
   width: 100%;
   font-size: ${font.secondaryHeaderS};
-  color: ${color.blue};
   
   div {
     justify-content: left;

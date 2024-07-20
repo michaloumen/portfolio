@@ -19,7 +19,7 @@ export const NavbarListContainer = styled.div`
 
     &:hover {
       transform: translateY(-5px);
-      color: ${color.yellow};
+      color: ${color.neonGreen};
     }
   }
 `;

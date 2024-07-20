@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
   transform: translateX(-50%);
   backdrop-filter: blur(10px);
   pointer-events: none;
-  background-color: ${color.transparentBlack};
+  background-color: ${color.transparentGray};
   border-radius: ${sizePx.borderRadius};
   margin-top: ${sizePx['50']};
   padding: ${sizePx['50']};

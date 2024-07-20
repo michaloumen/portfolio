@@ -3,7 +3,7 @@ import { color, font, sizePx } from '../../../styles';
 
 export const Container = styled.div`
   pointer-events: auto;
-  color: ${color.gray};
+  color: ${color.black};
   font-size: ${font.secondaryHeaderS};
   font-weight: ${font.weight500};
   

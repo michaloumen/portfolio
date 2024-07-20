@@ -9,7 +9,7 @@ export const TextArea = styled.div`
     outline: none;
     resize: none;
     background: transparent;
-    color: ${color.yellow};
+    color: ${color.black};
     font-weight: ${font.weight600};
   }
 `;

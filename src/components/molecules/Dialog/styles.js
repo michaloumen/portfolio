@@ -10,7 +10,7 @@ export const StyledModal = styled(Modal)`
   left: 50%;
   transform: translate(-50%, -50%);
   outline: none;
-  background-color: ${color.gray};
+  background-color: ${color.tealBlue};
   border-radius: ${sizePx.borderRadius};
   padding: ${sizePx.paddingM};
 

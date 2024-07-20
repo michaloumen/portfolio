@@ -6,15 +6,18 @@ export const Wrapper = styled.div`
   overflow: hidden;
   max-height: calc(100vh - 64px); 
 
-  @media (max-width: 769px) { max-height: 60rem; }
+  @media (max-width: 1400px) { max-height: 50rem; }
+  @media (max-width: 900px) { max-height: 75rem; }
+  @media (max-width: 700px) { max-height: 100rem; }
 `;
 
 export const Text = styled.div`
   display: flex;
   align-items: center;
-  color: ${color.gray};
+  color: ${color.black};
   font-size: ${font.secondaryHeaderS};
   gap: ${sizePx.paddingM};
+  text-align: justify;
   
   img {
     max-width: 50%;
@@ -24,5 +27,6 @@ export const Text = styled.div`
 
   @media (max-width: 769px) {
     flex-direction: column;
+    text-align: justify;
   }
 `;

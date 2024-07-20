@@ -6,7 +6,7 @@ const LanguageContext = createContext();
 export const useLanguageContext = () => useContext(LanguageContext);
 
 const LanguageProvider = ({ children }) => {
-  const [isEnglishLanguage, setIsEnglishLanguage] = useState(true);
+  const [isEnglishLanguage, setIsEnglishLanguage] = useState(false);
 
   const toggleLanguage = () => {
     setIsEnglishLanguage(prev => !prev);

@@ -52,19 +52,13 @@ const Portfolio = () => {
           />
         )}
         <Container>
-          <S.Container>
-            <S.Header>
-              {portfolioTextMessages.header}
-              <div>
-                {portfolioTextMessages.subtitle} <a
-                  href='https://github.com/michaloumen'
-                  target='_blank'
-                  rel='noreferrer'
-                >{portfolioTextMessages.clickHere}</a>
-              </div>
-            </S.Header>
-            <PortfolioList handleOpenModal={handleOpenModal} />
-          </S.Container>
+          <S.Header>
+            {portfolioTextMessages.header}
+            <div>
+              {portfolioTextMessages.subtitle}
+            </div>
+          </S.Header>
+          <PortfolioList handleOpenModal={handleOpenModal} />
         </Container>
       </AnimatedBackground>
     </S.Wrapper>

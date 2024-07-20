@@ -11,7 +11,7 @@ import {
 export const AnimatedSection = styled.div`
   display: flex;
   flex-direction: column;
-  background-color: ${color.purple};
+  background-color: ${color.black};
   overflow: hidden;
 
   svg {
@@ -23,8 +23,8 @@ export const AnimatedSection = styled.div`
   }
 
   svg:hover {
-    filter: drop-shadow(0 0 15px ${color.yellow});
-    fill: ${color.yellow};
+    filter: drop-shadow(0 0 15px ${color.neonGreen});
+    fill: ${color.neonGreen};
   }
 `;
 
