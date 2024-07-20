@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { color, font, sizePx } from '../../../styles';
+import { font, sizePx } from '../../../styles';
 
 export const Container = styled.div`
   flex-direction: column;
