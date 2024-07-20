@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import Modal from 'react-modal';
-import { color, sizePx } from '../../../styles';
+import { sizePx } from '../../../styles';
 
 export const StyledModal = styled(Modal)`
   width: ${sizePx.modalWidthM};
@@ -10,7 +10,7 @@ export const StyledModal = styled(Modal)`
   left: 50%;
   transform: translate(-50%, -50%);
   outline: none;
-  background-color: ${color.tealBlue};
+  background-color: white;
   border-radius: ${sizePx.borderRadius};
   padding: ${sizePx.paddingM};
 

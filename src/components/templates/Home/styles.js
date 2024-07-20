@@ -15,9 +15,8 @@ export const Text = styled.div`
   display: flex;
   align-items: center;
   color: ${color.black};
-  font-size: ${font.secondaryHeaderS};
+  font-size: ${font.textG};
   gap: ${sizePx.paddingM};
-  text-align: justify;
   
   img {
     max-width: 50%;
@@ -27,6 +26,5 @@ export const Text = styled.div`
 
   @media (max-width: 769px) {
     flex-direction: column;
-    text-align: justify;
   }
 `;
